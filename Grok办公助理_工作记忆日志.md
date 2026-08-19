@@ -1,6 +1,6 @@
 # Grok办公助理 · 工作记忆日志
 
-**最后更新**：2026-08-19 12:55（上海时间 / Asia/Shanghai）  
+**最后更新**：2026-08-19 20:04（上海时间 / Asia/Shanghai）  
 **维护者**：Grok办公助理  
 **用途**：防止会话记忆丢失。记录用户偏好、当前活跃事务与工作历程，供每次会话优先读取与更新。
 
@@ -35,7 +35,8 @@
 - **其他习惯**：待积累
 - **已知时区**：Asia/Shanghai（上海时间，UTC+8）
 - **订阅等级**：SuperGrokPro
-- **Hotmail**：两个已登录箱，一个箱一条线。`jari6688@hotmail.com`（jari wu）、`simonwu.chi@hotmail.com`（wu simon）。切箱用 login_hint。查收直接读；发信辉哥指定后发。Gmail `simonwu.chi@gmail.com` 另线。
+- **Hotmail**：两个已登录箱，一个箱一条线。`jari6688@hotmail.com`（jari wu）、`simonwu.chi@hotmail.com`（wu simon）。切箱用 login_hint。查收直接读；发信辉哥指定后发。
+- **Gmail**：三箱，一个箱一条线。`simonwu.chi@gmail.com`（default）、`kaycesimon1@gmail.com`（kayce）、`zhangsimon006@gmail.com`（zhang）。查收按指定箱；发信先确认发件箱再发。
 
 ---
 
@@ -43,17 +44,17 @@
 
 ### 待办任务（Todos）
 - [x] 今天 09:00 回公司（已提醒）
-- [ ] 今天 13:00 给法拉利客户订配件
-- [x] 两份 agent 文件已同步到本地工作区与中央仓库 `66agent`
-- [x] Hotmail 双箱已登录，skill 写入 `skills/Hotmail邮件.md`
-- [ ] 确认 Google Calendar 连接（曾 needsAuth，后见过 connected，待再核）
+- [ ] 法拉利客户订配件（13:00 改 16:00，已提醒，辉哥未确认是否已订）
+- [x] Hotmail 双箱 + Gmail 三箱已登录
+- [x] 规范 v1.6 与 skill 自动双写已落 GitHub + 本地
+- [x] Google Calendar 已连接（primary = simonwu.chi@gmail.com）
 
 ### 活跃提醒 / 即将到期
-- 2026-08-19 13:00（上海时间）— 给法拉利客户订配件
+- 无一次性提醒在跑。工作日 08:30 早报、20:00 傍晚收尾仍在。
 
 ### 本周重点关注
-- 今天：13:00 法拉利客户订配件
-- Hotmail 收发可用；skill 自动双写已写入规范 v1.6
+- 明天先确认法拉利配件是否已订
+- 邮件收发（Hotmail / Gmail）已可用
 
 ---
 
@@ -69,47 +70,40 @@
 ## 4. 近期工作日志（Recent Logs · 最新在前）
 
 ### 2026-08-19（周三）
-- [决策] 规范升到 v1.6：skill 新建/更新自动双写 GitHub `skills/` + 本地 `/Volumes/2T扩展盘/Agent文件/skills`
+- [完成] 傍晚收尾 20:04：法拉利订配件未确认；明日日历无正式日程；无 ChatGPT 要点
+- [提醒] 16:03 法拉利客户订配件（一次性，已删）
+- [完成] Gmail 三箱连通并可读：simonwu.chi / kaycesimon1 / zhangsimon006
+- [完成] Hotmail 测试邮件：jari6688 → simonwu.chi@gmail.com（12:56，Gmail 已收到）
+- [完成] `skills/Hotmail邮件.md` 复盘后双写 GitHub + 本地
+- [决策] 规范升到 v1.6：skill 新建/更新自动双写
 - [完成] Hotmail 双箱登录核验：jari6688@hotmail.com、simonwu.chi@hotmail.com；切箱用 login_hint
-- [任务] 蒸馏 `skills/Hotmail邮件.md`（复盘：无 MCP、头像切换不可靠、验证码与新登录通知要分开）
-- [任务] 以 GitHub 为准同步本地：规范 v1.5、工作记忆、shared/统一记忆日志管理策略.md
 - [完成] 晨间总控早报：P0 四项无命中
 - [完成] 09:01 已提醒回公司
 - [决策] 读取顺序以 shared 策略为准：GitHub → 本地
 - [决策] 中央仓库改为 https://github.com/Simon66-workshop/66agent（旧库 66Agent-Assitan 仅作历史）
 - [偏好] 称呼改为「辉哥或您」
-- [任务] 规范升到 v1.3，统一存储与同步协议写入两份文件
-- [提醒] 09:00 回公司（一次性）
-- [提醒] 13:00 给法拉利客户订配件（一次性）
-- [偏好] 称呼统一为辉哥；规范与日志同步改口
-- [完成] 两份文件写入本地工作区 `/Volumes/2T扩展盘/Agent文件`
-- [完成] 空仓库首次推送：规范文件 `5caf34c`，记忆日志 `09db68f`
-- [偏好] 工作时区由 America/Los_Angeles 改为 Asia/Shanghai（上海时间）
-- [决策] 本地工作区定为 `/Volumes/2T扩展盘/Agent文件`
-- [决策] Agent GitHub 仓库定为 https://github.com/Simon66-workshop/66agent
-- [任务] 将本地路径、GitHub 路径写入规范文件与本记忆日志
-- [任务] 同步协议：用户说「更新」时，本地与 GitHub 两边一起更新
+- [偏好] 工作时区为 Asia/Shanghai
 
 ### 2026-08-17（周一）
 - [初始化] 创建了《Grok办公助理_Agent规范文件》
 - [初始化] 创建了本工作记忆日志文件，用于防止记忆丢失
-- （后续操作记录在此追加，推荐使用标签：[提醒] [偏好] [任务] [完成] [决策] [会议]）
 
 ---
 
 ## 5. 重要记录与决策
 
+- 2026-08-19：Gmail 三箱、Hotmail 双箱均可用；一个箱一条线。
 - 2026-08-19：Skill 新建/更新必须自动双写 GitHub `skills/` 与本地 `skills/`。
-- 2026-08-19：Hotmail 双箱可用；切箱用 login_hint，见 `skills/Hotmail邮件.md`。
+- 2026-08-19：Hotmail 切箱用 login_hint，见 `skills/Hotmail邮件.md`。
 - 2026-08-19：Agent 文件必须同时落在本地工作区与 GitHub；用户说「更新」即双边同步。
 - 2026-08-19：工作时区改为上海时间。
-- 2026-08-19：称呼统一为辉哥，不再用 Simon / 您。
 - 2026-08-19 01:32：中央仓库改为 `66agent`；称呼改为辉哥或您。
 
 ---
 
 ## 6. 待跟进 / 开放问题（Open Items）
 
+- 法拉利客户订配件：是否已经下单，待辉哥确认。
 
 ---
 
