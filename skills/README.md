@@ -22,3 +22,4 @@
 - 本地AI-Agent部署与维护SOP.md
 - 内容创作平台适配指南.md
 - Hotmail邮件.md
+- 开通ClaudeTeam并充值.md
