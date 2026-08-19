@@ -14,3 +14,14 @@
 发布、回复、DM、付费、订阅、改生产系统、GitHub merge、部署、删文件、改账户。
 
 不能只拿播放量训练。终局：Views → Followers → Leads → Projects → Revenue。
+
+## 只优化这 6 件事
+
+1. 信源
+2. Radar
+3. 关键词
+4. 选题
+5. 形式
+6. 商业结果
+
+只基于 Ledger 外部结果。没有外部结果，不优化。

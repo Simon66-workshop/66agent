@@ -9,6 +9,12 @@
 - **新建或更新 skill 必须同时写入 GitHub 本目录和本地** `/Volumes/2T扩展盘/Agent文件/skills`，不必等辉哥再说「更新」
 
 ## 当前技能列表
+- X-Radar-5核心.md（现行 5 槽；汽车不进 Radar）
+- X-Radar-7核心.md（已废弃，改用 X-Radar-5核心.md）
+- Radar-Scout.md
+- Evidence-Judge.md
+- Content-Converter.md
+- Self-Optimizer.md
 - 辉哥业务背景.md
 - 小红书种草与变现方法论.md
 - 研究机会评估标准.md

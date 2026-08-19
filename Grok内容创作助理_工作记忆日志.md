@@ -1,6 +1,6 @@
 # Grok内容创作助理 · 工作记忆日志
 
-**最后更新**：2026-08-19 11:00（上海时间 / Asia/Shanghai）  
+**最后更新**：2026-08-19 21:00（上海时间 / Asia/Shanghai）  
 **维护者**：Grok内容创作助理  
 **用途**：防止会话记忆丢失。记录风格偏好、成稿反馈、选题决策，供每次会话优先读取与更新。
 
@@ -31,6 +31,10 @@
 - **闭环**：可视化或飞书结构化报告，禁止只用「已完成」交差
 - **铁律**：不打价格战；不写禁止词；不编未核验数据
 - **时区**：Asia/Shanghai
+- **Primary Job**（2026-08-19 晚上）：Intelligence → Content → Result；一个 Bot；不做万能秘书
+- **X Radar**：只服务 AI Agent 情报；汽车不再进 Radar；5 槽，旧 7 槽废弃
+- **日报邮箱**：simonwu.chi@gmail.com
+- **V0.1**：14 天不做 X Search API；Radar 只能 App / 网页 x.com/i/radar 建
 
 ---
 
@@ -68,6 +72,10 @@
 
 ## 4. 近期日志（最新在前）
 
+### 2026-08-19（周三）晚上
+- [决策] 辉哥同意新架构（GPT 方案）。5 个 X Radar，去掉汽车。一个 Bot（内容创作助理）。Primary Job：Intelligence → Content → Result，不做万能秘书。4 Skill：Radar-Scout / Evidence-Judge / Content-Converter / Self-Optimizer。2 Routine：每日 07:30 情报→内容；每周日 20:00 自优化。Ledger：66-Intelligence-Ledger.md，先空表，Google Drive 待授权后再同步。14 天不做 X Search API。日报发 simonwu.chi@gmail.com。规范升 v1.2。旧 `skills/X-Radar-7核心.md` 保留并标废弃。
+- [同步] 21:00 双写本地 `/Volumes/2T扩展盘/Agent文件` + GitHub `Simon66-workshop/66agent` main
+
 ### 2026-08-19（周三）
 - [同步] 10:59 从 GitHub `66agent` 拉取规范 v1.1、记忆日志、skills（日常任务/去AI味/小红书方法论/平台适配）、shared 模板扩展 → 本地 `/Volumes/2T扩展盘/Agent文件`（未回推）
 - [成稿] 选题2 七夕软脚先查油：小红书笔记 + 约50秒口播（不推销大六，过铁律）
@@ -102,12 +110,3 @@
 ---
 
 *本文件与《Grok内容创作助理_Agent规范文件》配套使用。*
-
-## 2026-08-19 21:00 [决策] X Radar 5 槽位定稿
-
-辉哥同意 GPT 新方案。X Radar 不再承担汽车内容。5 槽：
-[P0-DEV] Agent Coding Techniques / [P0-ARCH] Agent Systems / [P0-BIZ] Agent Commercial Projects / [P1-GROWTH] AI Revenue & Distribution / [P1-RED] Agent Evidence & Failure。
-一个 Bot：Grok内容创作助理。主任务 Intelligence → Content → Result，不做万能秘书。
-4 Skill：Radar Scout、Evidence Judge、Content Converter、Self Optimizer。
-2 Routine：每日 07:30 情报→内容；周日 20:00 自优化。
-日报发 simonwu.chi@gmail.com。14 天内不做 X Search API。Ledger：66-Intelligence-Ledger.md，Drive 待授权。
