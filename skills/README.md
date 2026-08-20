@@ -25,3 +25,4 @@
 - Hotmail邮件.md
 - 开通ClaudeTeam并充值.md
 - 教一遍就固化.md
+- 电影海报封面.md（ChatGPT 出图；六宫格只当选图板，定稿要单张 3:4）
