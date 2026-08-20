@@ -23,7 +23,7 @@
 - 本地AI-Agent部署与维护SOP.md
 - 内容创作平台适配指南.md
 - Hotmail邮件.md
-- 开通ClaudeTeam并充值.md
+- 登陆Claude订阅付费.md（Team 登陆+开通+加座；登录/2FA/付款必须停。问问题走 `找Claude问问题.md`）
+- 找Claude问问题.md（已登录交叉验证；不登陆、不付费。订阅付费走 `登陆Claude订阅付费.md`）
 - 教一遍就固化.md
 - 电影海报封面.md（ChatGPT 出图；六宫格只当选图板，定稿要单张 3:4）
-- 问问Claude.md（已登录 claude.ai 交叉验证；不是开通 Team）
