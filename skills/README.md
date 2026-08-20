@@ -26,3 +26,4 @@
 - 开通ClaudeTeam并充值.md
 - 教一遍就固化.md
 - 电影海报封面.md（ChatGPT 出图；六宫格只当选图板，定稿要单张 3:4）
+- 问问Claude.md（已登录 claude.ai 交叉验证；不是开通 Team）
