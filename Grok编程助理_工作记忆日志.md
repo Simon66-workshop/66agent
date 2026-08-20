@@ -1,6 +1,6 @@
 # Grok编程助理 · 工作记忆日志
 
-**最后更新**：2026-08-20 10:25（Asia/Shanghai）  
+**最后更新**：2026-08-20 18:06（Asia/Shanghai）  
 **维护者**：Grok编程助理  
 **用途**：防止会话记忆丢失。记录技术栈、本机环境、项目状态与编程历程。  
 **本地工作区**：`/Volumes/2T扩展盘/Agent文件`  
@@ -25,6 +25,7 @@
   - 不要把 token / 密码写入 git
   - 可能改本机系统的命令先说明风险并确认
   - QuotaBar / pet 落地必须先读 Build 改完回复，再拉 SHA、对照声称复测
+  - 产出文件只落 2T：下载/导出/笔记/图片/压缩包/报告只写 `/Volumes/2T扩展盘/Agent文件/`，按用途建子文件夹。不要存 Mac mini 系统盘（主目录 / Downloads / Desktop / Agent-tmp）。Agent-tmp 只作中转，拷完立刻删。
 
 ---
 
@@ -52,6 +53,7 @@
 - pet：`/Users/macmini-simon66/Documents/deskpet`
 - Swift 6.3.3 / Electron 可用
 - 不在此文件记录密钥
+- 产出只落 2T 工作区；Agent-tmp 只作中转，拷完立刻删。不要写主目录 / Downloads / Desktop。
 
 ---
 
@@ -66,6 +68,7 @@
 ## 5. 近期工作日志（最新在前）
 
 ### 2026-08-20
+- [决策] 产出文件只落 2T：`/Volumes/2T扩展盘/Agent文件/` 按用途分子目录。系统盘与 Agent-tmp 不落成品。规范已由办公升到 v1.5。本条只记入本日志，未改别人文件。
 - [规范] 升到 v1.4：共享电脑不是安全边界；教一遍就固化；不推 main、不绕 Always allow；官方只引 docs.x.ai/grok-bot/overview；编排总控冻结。读取顺序改为 GitHub → 本地。
 - [编制] 研究助理改四段简报交件；办公助理兼幕僚长/安全官。不新开第五人。
 - [项目] QuotaBar 基线仍是 v1.8.15 `5e13d47`（G 21）。复测 routine 保留，无新 SHA 保持安静。
@@ -84,6 +87,7 @@
 ## 6. 重要记录与决策
 
 - 中央仓 `66agent` 是多 Agent 共用。本 Agent 只维护 `Grok编程助理_*` 两份文件。
+- 产出文件只落 2T（MUST）：下载/导出/笔记/图片/压缩包/报告只写 `/Volumes/2T扩展盘/Agent文件/`，按用途建子文件夹。不写 Mac mini 系统盘（主目录 / Downloads / Desktop / Agent-tmp）。Agent-tmp 只作中转，拷完立刻删。
 - 旧仓 `66Agent-coder` 不再作为主仓。
 - 统一记忆策略：GitHub 权威源，顺序 GitHub → 本地。
 - QuotaBar 三池不混：G weekly / C Ultra / B Sand。D 内置，E 外接。
