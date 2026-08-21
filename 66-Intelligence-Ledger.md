@@ -6,6 +6,8 @@
 
 | Date | Radar | Source | Author | Signal | Score | Priority | Topic | Action | Accepted | Tested | Published | Platform | 24H | 72H | Leads | Revenue | Result | Lesson |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-22 | P0-BIZ | https://is-agentic.com / https://vercel.com/kb/guide/make-your-documentation-readable-by-ai-agents | Vercel / Ora / @MaxForAI | Agent Readiness 可测：is-agentic.com 100+ checks；官方 KB 给 llms.txt / .md / sitemap.md | 81 | P1 | GEO | 对现有落地页跑 is-agentic.com；没有官网就先别做 | | | | | 未核验 | | | | | 高分不等于 ChatGPT 推荐 66；雷达卡片无 permalink |
+| 2026-08-22 | P1-RED | https://labs.zenity.io/post/attackers-target-agents-via-the-skill-supply-chain | Zenity / @PallasSecurity | skills.sh 伪装 skill 1.7M 安装（非独立用户），8/2 已拆；payload 在安装说明里 | 77 | P1 | Security | 只装自己蒸馏/66agent skill；装前读全文，拒「唯一源/关TLS/远程脚本」 | | | | | 未核验 | | | | | 活动已于 8/2 中断；今天是提醒不是新事故 |
 | 2026-08-21 | P1-GROWTH | https://markets.businessinsider.com/news/stocks/press-ranger-and-otterlyai-release-study-showing-publishers-with-openai-deals-earn-48-more-ai-citations-on-chatgpt-1036478455 | Press Ranger / OtterlyAI | OpenAI 签约媒体 ChatGPT 引用 +48%（10.2 vs 6.9） | 80 | P1 | GEO | 不要买合同；查刹车避震垂直站谁被引 | | | | | 未核验 | | | | | 48% 是每页引用次数不是入选率；Resoneo 说索引待遇无差 |
 | 2026-08-21 | P0-ARCH | Radar Latest @AuroraZhangYY（无 permalink） | @AuroraZhangYY / Jason Liu / jxnl | 收窄职务（Chief of Staff）比泛 cron 更好分诊 | 72 | P1 | Harness | 2h：总控只分诊不代做研究/代码 | | | | | 未核验 | | | | | 模式公开存在；该帖本身是轶事 |
 | 2026-08-20 | P0-ARCH | https://x.com/taroleo | @taroleo / CC changelog 2.1.233 | Claude Code 新模型默认关 Todo/Task | 84 | P1 | Harness | 扫 skills 是否写死 TodoWrite | | | | | 未核验 | | | | | 官方 changelog 已核 |
