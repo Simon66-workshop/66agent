@@ -1,6 +1,6 @@
 # Grok编程助理 · 工作记忆日志
 
-**最后更新**：2026-08-20 18:06（Asia/Shanghai）  
+**最后更新**：2026-08-22 02:10（Asia/Shanghai）  
 **维护者**：Grok编程助理  
 **用途**：防止会话记忆丢失。记录技术栈、本机环境、项目状态与编程历程。  
 **本地工作区**：`/Volumes/2T扩展盘/Agent文件`  
@@ -26,22 +26,24 @@
   - 可能改本机系统的命令先说明风险并确认
   - QuotaBar / pet 落地必须先读 Build 改完回复，再拉 SHA、对照声称复测
   - 产出文件只落 2T：下载/导出/笔记/图片/压缩包/报告只写 `/Volumes/2T扩展盘/Agent文件/`，按用途建子文件夹。不要存 Mac mini 系统盘（主目录 / Downloads / Desktop / Agent-tmp）。Agent-tmp 只作中转，拷完立刻删。
+  - 新 skill 一律新增独立文件，不改旧 skill；README 只加目录一行。办公助理审过再双写 `skills/`。
 
 ---
 
 ## 2. 当前活跃事项（Active Snapshot）
 
 ### 活跃项目
-- QuotaBar | Swift 菜单栏 | 已装 v1.8.10 `d3aab99`（2026-08-19 10:56 上海，PID 39902） | Build 声称 Grok 改走 curl --noproxy、盘名两行 448pt；复测进行中。routine「QuotaBar 复测跟进」保留。
+- QuotaBar | Swift 菜单栏 | 基线 v1.8.15 `5e13d47`（G 显示 Settings 周池已用%，约 21） | routine「QuotaBar 复测跟进」保留；无新 SHA 保持安静。不要再装 5e13d47，不要点 Disconnect。
 - grokbot / deskpet | Electron | 已落地 `84f3e61`（2026-08-18 08:34 上海） | `/Users/macmini-simon66/Documents/deskpet`
 
 ### 待办
-- [ ] QuotaBar 1.8.10 对照 Build 清单复测：抬头 v1.8.10、G 是数字、盘名读全
-- [ ] G 若仍是 —，把 Grok 行完整副标题回 Build
+- [ ] QuotaBar HEAD 仍是 `5e13d47`：有比它新的 SHA 且 Build 说完再拉测
+- [ ] 辉哥要用 ChatGPT / Claude 新号时，登录验证码问编程Agent，只查已有 AgentMail 箱；密码不写进文件
 
 ### 本周重点
-- QuotaBar G 周用量绕开 Clash 127.0.0.1:7897
+- QuotaBar G 周用量绕开 Clash
 - 规范/日志按 GitHub → 本地同步
+- ChatGPT / Claude 个人 Free 注册已演示并固化为独立 skill
 
 ---
 
@@ -66,6 +68,12 @@
 ---
 
 ## 5. 近期工作日志（最新在前）
+
+### 2026-08-21
+- [项目] 无痕 + 已有 AgentMail 箱开出 ChatGPT 个人 Free（邮箱 OTP，无手机、无验证码图、无付款；密码页未出现）和 Claude 个人 Free（magic-link，拼图辉哥点；Join team 选个人账户、Use Claude for free、Skip 桌面应用；无手机、无付款）。登录验证码只查该 AgentMail 箱，不翻 Gmail/Hotmail。密码不写进本文件。
+- [skill] 办公助理审核通过并双写：`skills/注册ChatGPT个人账号.md`、`skills/注册Claude个人账号.md`，README 各加一行。未改「找Claude问问题」「登陆Claude订阅付费」。
+- [同步] 本日志按 GitHub → 本地更新。规范未改。未动别人文件。
+- [项目] QuotaBar 基线仍是 v1.8.15 `5e13d47`（G 21）。复测 routine 保留。
 
 ### 2026-08-20
 - [决策] 产出文件只落 2T：`/Volumes/2T扩展盘/Agent文件/` 按用途分子目录。系统盘与 Agent-tmp 不落成品。规范已由办公升到 v1.5。本条只记入本日志，未改别人文件。
@@ -93,13 +101,14 @@
 - QuotaBar 三池不混：G weekly / C Ultra / B Sand。D 内置，E 外接。
 - 辉哥授权可直接和 QuotaBar / pet 的 Grok Build 沟通。
 - Codex 任务监看保持暂停。
-- QuotaBar 复测跟进 routine 保留到 G 数字 + 盘名读全，或 2026-08-19 23:50。
+- QuotaBar 复测跟进 routine 保留；基线 v1.8.15 `5e13d47`。
+- ChatGPT / Claude 个人号验证码问编程Agent，只查 AgentMail，不写密码。
 
 ---
 
 ## 7. 待跟进
 
-- QuotaBar 1.8.10 复测未收口
+- QuotaBar 有新 SHA 再拉测
 
 ---
 
