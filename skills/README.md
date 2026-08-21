@@ -25,6 +25,8 @@
 - Hotmail邮件.md
 - 登陆Claude订阅付费.md（Team 登陆+开通+加座；登录/2FA/付款必须停。问问题走 `找Claude问问题.md`）
 - 找Claude问问题.md（已登录交叉验证；不登陆、不付费。订阅付费走 `登陆Claude订阅付费.md`）
+- 注册ChatGPT个人账号.md（无痕 + AgentMail 开个人 Free；不要先开 create-account。手机号/验证码图/付款硬停）
+- 注册Claude个人账号.md（无痕 + AgentMail magic-link 开个人 Free；拼图验证码交给辉哥。旧 Claude 两条不动）
 - 教一遍就固化.md
 - 电影海报封面.md（ChatGPT 出图；六宫格只当选图板，定稿要单张 3:4）
 - IP纯净度多维度检测.md（本机浏览器三站；先 Claude 页，缺折页数字标未提供，不用助手 IP）
