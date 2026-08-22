@@ -22,7 +22,7 @@
 - 去AI味与人类感检查清单.md
 - 本地AI-Agent部署与维护SOP.md
 - 内容创作平台适配指南.md
-- Hotmail邮件.md
+- Hotmail邮件.md（验证码走 login_hint + 搜索，不扫整页收件箱）
 - 登陆Claude订阅付费.md（Team 登陆+开通+加座；登录/2FA/付款必须停。问问题走 `找Claude问问题.md`）
 - 找Claude问问题.md（已登录交叉验证；不登陆、不付费。订阅付费走 `登陆Claude订阅付费.md`）
 - 注册ChatGPT个人账号.md（无痕 + AgentMail 开个人 Free；不要先开 create-account。手机号/验证码图/付款硬停）
