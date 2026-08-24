@@ -1,12 +1,12 @@
 ---
 name: Hotmail邮件
 description: >-
-  辉哥要查、读、搜 Hotmail（Outlook.com）邮件、验证码，或起草发出时用。两个箱都已登录，没有 Outlook MCP。
+  辉哥要查、读、搜 Hotmail（Outlook.com）邮件、验证码，或起草发出时用。三个箱都已登录，没有 Outlook MCP。
   验证码走 login_hint + 全箱搜索（含垃圾邮件），不要扫整页收件箱。
 ---
 # Hotmail / Outlook.com 邮件
 
-辉哥的 Hotmail 没有 Outlook MCP。收发一律走已登录的 Outlook 网页。两个箱都已登录，按「一个箱一条线」管，互不混。
+辉哥的 Hotmail 没有 Outlook MCP。收发一律走已登录的 Outlook 网页。三个箱都已登录，按「一个箱一条线」管，互不混。
 
 **验证码是快路径。** 不要 SearchPlugins、不要找 Outlook 连接器、不要先刷整页收件箱、不要等右侧预览慢慢加载。直接 login_hint 进箱，搜索范围扩到整个邮箱（含垃圾邮件），打开最新一封有 6 位数的，立刻回报。
 
@@ -16,6 +16,7 @@ description: >-
 | --- | --- | --- |
 | `jari6688@hotmail.com` | jari wu | https://outlook.live.com/mail/0/?login_hint=jari6688@hotmail.com |
 | `simonwu.chi@hotmail.com` | wu simon | https://outlook.live.com/mail/0/?login_hint=simonwu.chi@hotmail.com |
+| `sheryhu6688@hotmail.com` | sheryhu | https://outlook.live.com/mail/0/?login_hint=sheryhu6688@hotmail.com |
 
 - 切箱只用上面的 `login_hint` 链接。不要点右上角头像切。
 - 登录会话长期有效。不要每次重登，不要登出一个保另一个。
