@@ -1,6 +1,6 @@
 # Grok办公助理 · 工作记忆日志
 
-**最后更新**：2026-08-24 11:48（上海时间 / Asia/Shanghai）  
+**最后更新**：2026-08-24 20:05（上海时间 / Asia/Shanghai）  
 **维护者**：Grok办公助理  
 **用途**：防止会话记忆丢失。记录用户偏好、当前活跃事务与工作历程，供每次会话优先读取与更新。
 
@@ -39,17 +39,19 @@
 - [ ] XT6 黑武士封面 + 抖音/小红书/快手发布（8/20 已提醒，是否发出未确认）
 - [ ] 闲鱼 OpenAI YubiKey 文案待填：价格 / 一套还是单把 / 成色 / 发货
 - [ ] 法拉利客户订配件（8/19 已提醒，未确认是否下单）
-- [ ] 影哨 sanitize P1：无括号 IPv6、数字开头 hostname:port；下轮修，不推 main
+- [ ] 影哨 P1 下轮：sanitize IPv6/数字开头 hostname；PR#3 四条（last-resort activate、hold 不清空 connected、Terminal miniaturize/install 回退、pin 超时多点一次）。不推 main
 
 ### 本周未完成
 - 法拉利客户订配件：未确认是否下单
 - XT6 封面 / 三平台发布：未确认是否发出
 - 店内三项 + BOSS 招聘：已提醒，未收口
 - 闲鱼 YubiKey：文案已写，4 项待辉哥拍板
-- 影哨 P1 sanitize：门禁已过，P1 下轮修
+- 影哨 P1：PR#2 sanitize + PR#3 四条，下轮修，不推 main
+- Hotmail skill 三箱 GitHub 已写，2T 本机执行卡未批
 
 ### 本周审批清单
 - 无（闲鱼上架还差 4 项，未到付款/外发/删除/上线）
+- 安全官建议撤销的报错连接器：等辉哥点头
 
 ### 活跃提醒
 - 工作日 08:30 早报、20:00 傍晚收尾
@@ -69,8 +71,10 @@
 ## 4. 近期工作日志（Recent Logs · 最新在前）
 
 ### 2026-08-24（周一）
+- [完成] 傍晚收尾 20:05。日历今晚至周二无事件。Hotmail 只读、未全箱扫。P0 无新命中。
+- [完成] 影哨 PR#3 HEAD f17034a 门禁：有条件通过，P0 0 P1 4。Grok 4.6 实跑 session 01a03266。编程Bot 确认分支已在远端，不再 push；main 不动。
 - [记录] 第三 Hotmail 箱 sheryhu6688@hotmail.com（显示名 shery hu）辉哥亲手登好。Hotmail skill 改为三箱，GitHub `skills/Hotmail邮件.md` commit 6880fc3。
-- [完成] 晨间总控早报 08:35。P0 四项无命中。日历今日无事件。ChatGPT 要点未粘贴。Hotmail 未扫。第一次安全官周审已出。
+- [完成] 晨间总控早报 08:35。P0 四项无命中。日历今日无事件。ChatGPT 要点未粘贴。第一次安全官周审已出。
 - [记录] 影哨 PR#2 门禁通过，P0 0 P1 1（sanitize 残余：无括号 IPv6 / 数字开头 hostname:port）；编程Bot 确认这轮不改、不推 main。
 - [安全] 周审：建议撤掉报错且不用的 AWS / 1Password MCP / Appwrite API / Slack / Railway / Datadog；Asana、Granola、Figma 待登录、不用就卸。Sinch / AgentMail / Composio 权限大，辉哥点头再撤。不写密钥。
 
@@ -101,6 +105,7 @@
 
 ## 5. 重要记录与决策
 
+- 2026-08-24：影哨 PR#3 有条件通过（P0 0 P1 4），分支 f17034a，不推 main。
 - 2026-08-24：Hotmail 第三箱 sheryhu6688@hotmail.com（shery hu）已登录并写入 skill。
 - 2026-08-24：第一次安全官周审已出。下一次 2026-08-31。
 - 2026-08-20：产出文件只落到 `/Volumes/2T扩展盘/Agent文件`，按用途建子文件夹；Mac mini 硬盘不留成品。全员遵守。
