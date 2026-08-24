@@ -1,6 +1,6 @@
 # Grok办公助理 · 工作记忆日志
 
-**最后更新**：2026-08-24 08:35（上海时间 / Asia/Shanghai）  
+**最后更新**：2026-08-24 11:48（上海时间 / Asia/Shanghai）  
 **维护者**：Grok办公助理  
 **用途**：防止会话记忆丢失。记录用户偏好、当前活跃事务与工作历程，供每次会话优先读取与更新。
 
@@ -26,7 +26,7 @@
 - **已知时区**：Asia/Shanghai（上海时间，UTC+8）
 - **沟通风格**：简洁专业、结构化列表、中文为主
 - **晚间习惯**：20:00 健身（跑 3km，卧推 105kg×3×4，保加利亚分腿蹲 25kg 双手×24×4，辅助 40 个），预计 24:00 休息
-- **Hotmail**：jari6688@hotmail.com、simonwu.chi@hotmail.com；切箱用 login_hint；先只读，发信需点头
+- **Hotmail**：jari6688@hotmail.com（jari wu）、simonwu.chi@hotmail.com（wu simon）、sheryhu6688@hotmail.com（shery hu，2026-08-24 登好）；切箱用 login_hint；先只读，发信需点头
 - **Gmail**：simonwu.chi@gmail.com、kaycesimon1@gmail.com、zhangsimon006@gmail.com、zhangmiaomiao991@gmail.com
 
 ---
@@ -69,6 +69,7 @@
 ## 4. 近期工作日志（Recent Logs · 最新在前）
 
 ### 2026-08-24（周一）
+- [记录] 第三 Hotmail 箱 sheryhu6688@hotmail.com（显示名 shery hu）辉哥亲手登好。Hotmail skill 改为三箱，GitHub `skills/Hotmail邮件.md` commit 6880fc3。
 - [完成] 晨间总控早报 08:35。P0 四项无命中。日历今日无事件。ChatGPT 要点未粘贴。Hotmail 未扫。第一次安全官周审已出。
 - [记录] 影哨 PR#2 门禁通过，P0 0 P1 1（sanitize 残余：无括号 IPv6 / 数字开头 hostname:port）；编程Bot 确认这轮不改、不推 main。
 - [安全] 周审：建议撤掉报错且不用的 AWS / 1Password MCP / Appwrite API / Slack / Railway / Datadog；Asana、Granola、Figma 待登录、不用就卸。Sinch / AgentMail / Composio 权限大，辉哥点头再撤。不写密钥。
@@ -100,6 +101,7 @@
 
 ## 5. 重要记录与决策
 
+- 2026-08-24：Hotmail 第三箱 sheryhu6688@hotmail.com（shery hu）已登录并写入 skill。
 - 2026-08-24：第一次安全官周审已出。下一次 2026-08-31。
 - 2026-08-20：产出文件只落到 `/Volumes/2T扩展盘/Agent文件`，按用途建子文件夹；Mac mini 硬盘不留成品。全员遵守。
 - 2026-08-20：辉哥把 awesome-grok-bot 的幕僚长/安全官并入办公助理，不新开 Bot。编排总控文件冻结不当入口。共享电脑不是安全边界。教一遍就固化。
@@ -112,6 +114,7 @@
 
 - 法拉利客户订配件：是否已经下单，待辉哥确认。
 - 安全官建议撤销的报错连接器：等辉哥点头。
+- 2T 同步 Hotmail skill / 工作日志：本机执行卡未批，待辉哥点允许后落盘。
 
 ---
 
