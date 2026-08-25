@@ -1,6 +1,6 @@
 # Grok办公助理 · 工作记忆日志
 
-**最后更新**：2026-08-25 08:35（上海时间 / Asia/Shanghai）  
+**最后更新**：2026-08-25 20:05（上海时间 / Asia/Shanghai）  
 **维护者**：Grok办公助理  
 **用途**：防止会话记忆丢失。记录用户偏好、当前活跃事务与工作历程，供每次会话优先读取与更新。
 
@@ -40,6 +40,7 @@
 - [ ] 闲鱼 OpenAI YubiKey 文案待填：价格 / 一套还是单把 / 成色 / 发货
 - [ ] 法拉利客户订配件（8/19 已提醒，未确认是否下单）
 - [ ] 影哨 P1 下轮：sanitize IPv6/数字开头 hostname；PR#3 四条（last-resort activate、hold 不清空 connected、Terminal miniaturize/install 回退、pin 超时多点一次）。不推 main
+- [ ] grokbot P1 下轮（PR#3 有条件通过后记下）：dock 点穿、chip 后一帧穿透、tickColor HSV 弧、无 document 不 punch、色测试复制公式。不推 main
 
 ### 本周未完成
 - 法拉利客户订配件：未确认是否下单
@@ -47,10 +48,12 @@
 - 店内三项 + BOSS 招聘：已提醒，未收口
 - 闲鱼 YubiKey：文案已写，4 项待辉哥拍板
 - 影哨 P1：PR#2 sanitize + PR#3 四条，下轮修，不推 main
+- grokbot P1：PR#3 七条，下轮修，不推 main
 
 ### 本周审批清单
 - 无（闲鱼上架还差 4 项，未到付款/外发/删除/上线）
 - 安全官建议撤销的报错连接器：等辉哥点头
+- grokbot / 影哨 都不推 main
 
 ### 活跃提醒
 - 工作日 08:30 早报、20:00 傍晚收尾
@@ -70,7 +73,10 @@
 ## 4. 近期工作日志（Recent Logs · 最新在前）
 
 ### 2026-08-25（周二）
-- [完成] 晨间总控早报 08:35。P0 四项无命中（Daybreak 仍停在 8/15；无 GPT 官方 ≥8% 优惠；Apple 中国翻新列表无 Mac Studio，也无 M4 Max 128G 可下单）。日历今日无事件。ChatGPT 要点未粘贴。Hotmail 未扫。
+- [完成] 傍晚收尾 20:05。日历今晚至周三无事件。Hotmail 未全箱扫。P0 无新命中。
+- [完成] grokbot PR #3 HEAD 2e39e1f 门禁：有条件通过，P0 0 P1 7。Grok 4.6 实跑 session 01a03770（16 轮用尽无终稿）。本机 node --test 64/0。编程Bot 确认分支已在 origin，不推 main。
+- [记录] sheryhu6688 最近 6 封 OpenAI：新登录（Leesburg, US）+ 码 865611/722348 + 三封推销。simonwu.chi 当日 GPT 码最新仍是 267612。
+- [完成] 晨间总控早报 08:35。P0 四项无命中。日历今日无事件。ChatGPT 要点未粘贴。
 
 ### 2026-08-24（周一）
 - [完成] 傍晚收尾 20:05。日历今晚至周二无事件。Hotmail 只读、未全箱扫。P0 无新命中。工作日志与 Hotmail 三箱 skill 已落到 2T。
@@ -107,6 +113,7 @@
 
 ## 5. 重要记录与决策
 
+- 2026-08-25：grokbot PR #3 有条件通过（P0 0 P1 7），分支 2e39e1f，不推 main。
 - 2026-08-24：影哨 PR#3 有条件通过（P0 0 P1 4），分支 f17034a，不推 main。
 - 2026-08-24：Hotmail 第三箱 sheryhu6688@hotmail.com（shery hu）已登录并写入 skill。
 - 2026-08-24：第一次安全官周审已出。下一次 2026-08-31。
