@@ -1,6 +1,6 @@
 # Grok办公助理 · 工作记忆日志
 
-**最后更新**：2026-08-25 20:05（上海时间 / Asia/Shanghai）  
+**最后更新**：2026-08-26 08:35（上海时间 / Asia/Shanghai）  
 **维护者**：Grok办公助理  
 **用途**：防止会话记忆丢失。记录用户偏好、当前活跃事务与工作历程，供每次会话优先读取与更新。
 
@@ -39,20 +39,21 @@
 - [ ] XT6 黑武士封面 + 抖音/小红书/快手发布（8/20 已提醒，是否发出未确认）
 - [ ] 闲鱼 OpenAI YubiKey 文案待填：价格 / 一套还是单把 / 成色 / 发货
 - [ ] 法拉利客户订配件（8/19 已提醒，未确认是否下单）
-- [ ] 影哨 P1 下轮：sanitize IPv6/数字开头 hostname；PR#3 四条（last-resort activate、hold 不清空 connected、Terminal miniaturize/install 回退、pin 超时多点一次）。不推 main
-- [ ] grokbot P1 下轮（PR#3 有条件通过后记下）：dock 点穿、chip 后一帧穿透、tickColor HSV 弧、无 document 不 punch、色测试复制公式。不推 main
+- [ ] 影哨 P1 下轮：sanitize IPv6/数字开头 hostname；PR#3 四条。不推 main
+- [ ] grokbot P1 下轮（PR#3 有条件通过后记下）。不推 main
+- [ ] P0 关注：Mac Studio 官翻已上架（36GB ¥39799 / 48GB ¥43599 可下单）；等 128G 或辉哥拍板是否下手
 
 ### 本周未完成
 - 法拉利客户订配件：未确认是否下单
 - XT6 封面 / 三平台发布：未确认是否发出
 - 店内三项 + BOSS 招聘：已提醒，未收口
 - 闲鱼 YubiKey：文案已写，4 项待辉哥拍板
-- 影哨 P1：PR#2 sanitize + PR#3 四条，下轮修，不推 main
-- grokbot P1：PR#3 七条，下轮修，不推 main
+- 影哨 P1 / grokbot P1：下轮修，不推 main
 
 ### 本周审批清单
-- 无（闲鱼上架还差 4 项，未到付款/外发/删除/上线）
+- 无（闲鱼上架还差 4 项）
 - 安全官建议撤销的报错连接器：等辉哥点头
+- Mac Studio 官翻下手 / 付款：等辉哥点头（未代下单）
 - grokbot / 影哨 都不推 main
 
 ### 活跃提醒
@@ -72,55 +73,27 @@
 
 ## 4. 近期工作日志（Recent Logs · 最新在前）
 
+### 2026-08-26（周三）
+- [完成] 晨间总控早报 08:35。P0：Mac Studio 官翻补货命中（M4 Max 14核/32核 36GB ¥39799；16核/40核 48GB ¥43599；isBuyable true）。无 Daybreak 新信；无 GPT ≥8% 官方优惠；无 M4 Max 128G 可下单。日历今日无事件。ChatGPT 要点未粘贴。Hotmail 未扫。
+
 ### 2026-08-25（周二）
 - [完成] 傍晚收尾 20:05。日历今晚至周三无事件。Hotmail 未全箱扫。P0 无新命中。
-- [完成] grokbot PR #3 HEAD 2e39e1f 门禁：有条件通过，P0 0 P1 7。Grok 4.6 实跑 session 01a03770（16 轮用尽无终稿）。本机 node --test 64/0。编程Bot 确认分支已在 origin，不推 main。
-- [记录] sheryhu6688 最近 6 封 OpenAI：新登录（Leesburg, US）+ 码 865611/722348 + 三封推销。simonwu.chi 当日 GPT 码最新仍是 267612。
-- [完成] 晨间总控早报 08:35。P0 四项无命中。日历今日无事件。ChatGPT 要点未粘贴。
+- [完成] grokbot PR #3 HEAD 2e39e1f 门禁：有条件通过，P0 0 P1 7。Grok 4.6 实跑 session 01a03770。本机 node --test 64/0。编程Bot 确认分支已在 origin，不推 main。
+- [记录] sheryhu6688 最近 6 封 OpenAI；simonwu.chi 当日 GPT 码最新仍是 267612。
+- [完成] 晨间总控早报 08:35。P0 四项无命中。日历今日无事件。
 
 ### 2026-08-24（周一）
-- [完成] 傍晚收尾 20:05。日历今晚至周二无事件。Hotmail 只读、未全箱扫。P0 无新命中。工作日志与 Hotmail 三箱 skill 已落到 2T。
-- [完成] 影哨 PR#3 HEAD f17034a 门禁：有条件通过，P0 0 P1 4。Grok 4.6 实跑 session 01a03266。编程Bot 确认分支已在远端，不再 push；main 不动。
-- [记录] 第三 Hotmail 箱 sheryhu6688@hotmail.com（显示名 shery hu）辉哥亲手登好。Hotmail skill 改为三箱，GitHub `skills/Hotmail邮件.md` commit 6880fc3。
-- [完成] 晨间总控早报 08:35。P0 四项无命中。日历今日无事件。ChatGPT 要点未粘贴。第一次安全官周审已出。
-- [记录] 影哨 PR#2 门禁通过，P0 0 P1 1（sanitize 残余：无括号 IPv6 / 数字开头 hostname:port）；编程Bot 确认这轮不改、不推 main。
-- [安全] 周审：建议撤掉报错且不用的 AWS / 1Password MCP / Appwrite API / Slack / Railway / Datadog；Asana、Granola、Figma 待登录、不用就卸。Sinch / AgentMail / Composio 权限大，辉哥点头再撤。不写密钥。
-
-### 2026-08-22（周六）
-- [决策] 办公助理新增程序审计门禁。Skill：办公助理_程序审计SOP.md、编程助理_提交程序审计SOP.md
-
-### 2026-08-21（周五）
-- [完成] 傍晚收尾 20:06。日历周五至周日无事件。Hotmail 未扫。Daybreak 无新信。
-- [记录] Gmail：OpenAI Advanced Account Security 已开启；账户新加 security key/passkey。Decodo 收到 $9.99 发票后取消月订。
-- [完成] 晨间总控早报 08:32：P0 四项无命中。日历今日无事件。Hotmail 未扫。ChatGPT 要点未粘贴。
-
-### 2026-08-20（周四）
-- [完成] 傍晚收尾 20:05。日历暂时读不到。Gmail 未读约 19，Daybreak 无新信。Hotmail 未扫。
-- [完成] 闲鱼文案落到 `/Volumes/2T扩展盘/Agent文件/文案/YubiKey-OpenAI-闲鱼/`，4 项待填
-- [完成] 全员产出只落 2T：共享策略 + 四方规范，编程/内容/研究日志已回执
-- [决策] 全员：产出文件只落 2T Agent 文件夹，不存 Mac mini
-- [决策] 规范 v1.7 补编制原则：共享电脑不是安全边界；编排总控冻结；官方总览只引用；教一遍就固化
-- [决策] 规范升到 v1.7：幕僚长 + 安全官并入办公助理，不新开第五个 Bot
-- [完成] 晨间总控早报 08:34：P0 四项无命中
-- [提醒] 09:02 店内三项 + BOSS 招聘
-
-### 2026-08-19（周三）
-- [完成] 傍晚收尾 20:04
-- [完成] Gmail 三箱、Hotmail 双箱可用
-- [完成] `skills/Hotmail邮件.md`、`skills/开通ClaudeTeam并充值.md` 入库
+- [完成] 傍晚收尾 20:05。影哨 PR#3 有条件通过。Hotmail 第三箱写入。第一次安全官周审已出。晨间早报 P0 无命中。
 
 ---
 
 ## 5. 重要记录与决策
 
+- 2026-08-26：Apple 中国官翻首次确认 Mac Studio M4 Max 可下单（36GB / 48GB），非 128G。
 - 2026-08-25：grokbot PR #3 有条件通过（P0 0 P1 7），分支 2e39e1f，不推 main。
 - 2026-08-24：影哨 PR#3 有条件通过（P0 0 P1 4），分支 f17034a，不推 main。
-- 2026-08-24：Hotmail 第三箱 sheryhu6688@hotmail.com（shery hu）已登录并写入 skill。
-- 2026-08-24：第一次安全官周审已出。下一次 2026-08-31。
-- 2026-08-20：产出文件只落到 `/Volumes/2T扩展盘/Agent文件`，按用途建子文件夹；Mac mini 硬盘不留成品。全员遵守。
-- 2026-08-20：辉哥把 awesome-grok-bot 的幕僚长/安全官并入办公助理，不新开 Bot。编排总控文件冻结不当入口。共享电脑不是安全边界。教一遍就固化。
-- 2026-08-19：Skill 新建/更新必须自动双写 GitHub `skills/` 与本地 `skills/`。
-- 2026-08-19：中央仓库 `66agent`；时区上海；称呼辉哥或您。
+- 2026-08-24：Hotmail 第三箱 sheryhu6688；第一次安全官周审。下一次 2026-08-31。
+- 2026-08-20：产出只落 2T；幕僚长+安全官并入办公助理。
 
 ---
 
@@ -128,6 +101,7 @@
 
 - 法拉利客户订配件：是否已经下单，待辉哥确认。
 - 安全官建议撤销的报错连接器：等辉哥点头。
+- Mac Studio 官翻：是否下手 / 是否继续等 128G，待辉哥确认。
 
 ---
 
