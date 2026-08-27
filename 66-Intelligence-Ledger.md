@@ -6,6 +6,8 @@
 
 | Date | Radar | Source | Author | Signal | Score | Priority | Topic | Action | Accepted | Tested | Published | Platform | 24H | 72H | Leads | Revenue | Result | Lesson |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-27 | P1-GROWTH | https://webmachinelearning.github.io/webmcp/ | W3C WebML CG / Google+MS / Radar @fabienr34 | WebMCP：站点用 document.modelContext 给 Agent 可调用工具，不只给 markdown | 75 | P1 | GEO | 没有落地页先别做；有页先扫 is-agentic Essential，再谈 registerTool | | | | | 未核验 | | | | | 接 8/22 Agent Readiness；仍是草案+Chrome origin trial，不是全浏览器标准 |
+| 2026-08-27 | P0-DEV | community config + OpenAI Sol 1.05M window | Radar @ScarletKc_ | Codex 用 model_context_window / auto_compact_token_limit 拉到约 1M；默认目录可能卡在 272K | 72 | P1 | Harness | 有 Codex Sol：试两行 config，查实际窗口；没有就忽略。更大窗更烧额度 | | | | | 未核验 | | | | | 配置写了不等于客户端接受；WithPT 有人开了几天又关 |
 | 2026-08-26 | P1-RED | https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it | Anthropic | Claude chat 与 Cowork 共用一份记忆，边聊边写入；Code 仍分开；Free/Pro/Max 默认开，不能拆只能换账号 | 77 | P1 | Memory | Settings→Memory 盘点；敏感话题默认关；不要把不该进记忆的项目细节丢进闲聊 | | | | | 未核验 | | | | | 接 8/25 Grok 共享电脑；不是隔离，是同一份记忆 |
 | 2026-08-26 | P1-RED | https://arxiv.org/html/2608.23471 | SJTU / Ant / Radar @gdlinux | InjecMEM：一次正常对话即可污染长期记忆，无需读改记忆库 | 76 | P1 | Security | 记忆当安全边界：少让 Agent 把网页/陌生人对话写进长期记忆；定期清 Topics | | | | | 未核验 | | | | | 论文数字在 MemoryOS 等实验系统，不是 Claude/Grok 官方记忆已中招 |
 | 2026-08-25 | P1-RED | https://docs.x.ai/grok-bot/computer-and-apps | xAI docs / Radar @Gustafssonkotte | Grok Bot 一台机四个屏：cookie/文件/CLI 凭证全账号共享，屏不是安全边界 | 87 | P0 | Harness | 别把四个 Bot 当隔离保险箱；敏感登录用连接器或本机，不要堆在共享机 | | | | | 未核验 | | | | | 官文原文；营销语「每 Bot 一台电脑」是简称 |
