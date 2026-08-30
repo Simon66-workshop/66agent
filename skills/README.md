@@ -34,3 +34,4 @@
 - 办公助理_程序审计SOP.md（完成态质量门禁；收审计包，组织 Grok 4.6 / Opus 4.5 / GPT-5.6 sol）
 - 编程助理_提交程序审计SOP.md（编程交【程序审计提交包】；不得自行标完成）
 - 影哨自动换线值守.md（Apple 芯片 Mini；PR 未合 main 前只拉已验收分支；24 小时观察正常安静）
+- hf-cloud-lab.md（编程Bot 把 HF 模型拉到云电脑本地测；默认不下 8GB / 14B+；Read token；不走付费 Inference）
