@@ -40,3 +40,4 @@
 - macbook-pro-probe.md（Pro 单机入口；优先 locate-machine-probe）
 - airbook-probe.md（Air 单机入口；优先 locate-machine-probe）
 - mini-butler-probe.md（Mac mini 管家探针与职责边界）
+- boss-editor-chat.md（剪辑/新媒体岗代聊：AE运镜追问、口播IP+展示号、抖音66_Workshop）
