@@ -44,4 +44,5 @@
 - boss-message-screen.md（Boss 看人→回复：先读候选人索引、新招呼点人、读经历、常用语/手打发送；换微信/约面/不合适先停；配合 boss-candidate-index / locate-machine-probe / boss-zhipin-click / boss-editor-chat）
 - hr-professional-reply.md（专业招聘回复骨架：硬条件→个性化一句→stand/next/when；软拒体面；薪资无原话不编；配 boss-message-screen）
 - boss-send-guard.md（Boss 发前核顶栏姓名；禁止把搜索人名粘进聊天框；辅助功能失败就停）
-- boss-candidate-index.md（Boss 开聊/回聊读写云电脑候选人索引 INDEX+people，防掉记忆；配 boss-message-screen）
+- boss-candidate-index.md（Boss 开聊/回聊读写云电脑候选人索引 INDEX+people，防掉记忆；配 boss-message-screen / hr-candidate-score）
+- hr-candidate-score.md（求职者多维评分 scorecard：六维加权+证据锚定+综合建议；配 boss-candidate-index）

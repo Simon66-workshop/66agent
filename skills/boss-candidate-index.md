@@ -1,12 +1,12 @@
 ---
 name: boss-candidate-index
 description: >-
-  use this when Boss直聘开聊/回聊/看简历前后：读写云电脑招聘候选人索引，避免掉记忆；配合
+  use this when Boss直聘开聊/回聊/看简历前后：读写云电脑招聘候选人索引，避免掉记忆；综评时配合 hr-candidate-score；配合
   boss-message-screen、boss-send-guard
 ---
 # Boss 候选人索引（防掉记忆）
 
-招聘聊天跨会话会丢细节。凡 Boss 直聘**开聊、回聊、看完简历、改状态**，都要读写本索引。配合 [boss-message-screen](sand-workflow:boss-message-screen)、[boss-send-guard](sand-workflow:boss-send-guard)、[boss-editor-chat](sand-workflow:boss-editor-chat)、[hr-professional-reply](sand-workflow:hr-professional-reply)。
+招聘聊天跨会话会丢细节。凡 Boss 直聘**开聊、回聊、看完简历、改状态**，都要读写本索引。配合 [boss-message-screen](sand-workflow:boss-message-screen)、[boss-send-guard](sand-workflow:boss-send-guard)、[boss-editor-chat](sand-workflow:boss-editor-chat)、[hr-professional-reply](sand-workflow:hr-professional-reply)。需要综评/打分时跑 [hr-candidate-score](sand-workflow:hr-candidate-score)，分数写入本卡片「评分」节。
 
 ## 权威路径（云电脑）
 
@@ -32,6 +32,7 @@ Boss 仍只在 **MacBook Pro** 登录操作；索引活在云电脑，不往云�
 - 看过在线/附件简历或作品
 - 发出或收到关键推进（要材料、对齐岗位、软拒、Hold）
 - 匹配判断变化、状态变化、辉哥新指示（如勿换微信）
+- 完成一次 [hr-candidate-score](sand-workflow:hr-candidate-score) 评分
 
 ## 单人卡片最低字段
 
@@ -46,6 +47,8 @@ Boss 仍只在 **MacBook Pro** 登录操作；索引活在云电脑，不往云�
 - 教育/年限/技能/关键经历（有简历再填）
 ## 已聊要点
 - 时间线短句；已问过的标清楚，禁止重复问
+## 评分（可选，有 scorecard 时）
+- 综合分 / 建议 / 日期；详见 hr-candidate-score 模板
 ## 下一步
 - 一条可执行下一步；重大决定写「先叫辉哥」
 ```
@@ -56,7 +59,8 @@ Boss 仍只在 **MacBook Pro** 登录操作；索引活在云电脑，不往云�
 2. 读卡片「已聊要点 / 下一步」再起草（已问过的不重复）
 3. [boss-send-guard](sand-workflow:boss-send-guard) 核顶栏后发送
 4. 本轮结束：立刻改卡片 + 改 INDEX 行（状态、匹配、下一步）
-5. 有实质变更时：同步到 GitHub `boss-hiring/`；并请 Mini Bot 拷到 2T
+5. 材料够或辉哥要评价 → 跑 [hr-candidate-score](sand-workflow:hr-candidate-score)
+6. 有实质变更时：同步到 GitHub `boss-hiring/`；并请 Mini Bot 拷到 2T
 
 ## 禁止
 
