@@ -39,3 +39,4 @@
 - wechat-mac-reply.md（Mac 微信代回；探针+标题双检+剪贴板；默认辉哥先点开会话）
 - macbook-pro-probe.md（Pro 单机入口；优先 locate-machine-probe）
 - airbook-probe.md（Air 单机入口；优先 locate-machine-probe）
+- mini-butler-probe.md（Mac mini 管家探针与职责边界）
