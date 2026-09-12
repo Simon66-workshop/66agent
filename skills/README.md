@@ -35,3 +35,7 @@
 - 编程助理_提交程序审计SOP.md（编程交【程序审计提交包】；不得自行标完成）
 - 影哨自动换线值守.md（Apple 芯片 Mini；PR 未合 main 前只拉已验收分支；24 小时观察正常安静）
 - hf-cloud-lab.md（编程Bot 把 HF 模型拉到云电脑本地测；默认不下 8GB / 14B+；Read token；不走付费 Inference）
+- locate-machine-probe.md（多机并行指纹锁定 Pro/Air/Mini；侧栏 machineId 不可信）
+- wechat-mac-reply.md（Mac 微信代回；探针+标题双检+剪贴板；默认辉哥先点开会话）
+- macbook-pro-probe.md（Pro 单机入口；优先 locate-machine-probe）
+- airbook-probe.md（Air 单机入口；优先 locate-machine-probe）
