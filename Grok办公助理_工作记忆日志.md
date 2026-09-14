@@ -1,6 +1,6 @@
 # Grok办公助理 · 工作记忆日志
 
-**最后更新**：2026-09-14 08:40（上海时间 / Asia/Shanghai）
+**最后更新**：2026-09-14 20:30（上海时间 / Asia/Shanghai）
 **维护者**：Grok办公助理  
 **用途**：防止会话记忆丢失。记录用户偏好、当前活跃事务与工作历程，供每次会话优先读取与更新。
 
@@ -42,6 +42,7 @@
 - [x] FedEx 清关 876354475173：**已取消盯盘**（2026-09-10 辉哥下令，不再查报）
 - [ ] 影哨 P1 下轮：sanitize IPv6/数字开头 hostname；PR#3 四条。不推 main
 - [ ] grokbot P1 下轮（PR#3 有条件通过后记下）。不推 main
+- [ ] Demand Evidence V0.1：Draft PR #6 REAL_RADAR 验收 / 是否合入（须辉哥点头；不推 main）
 - [x] P0 盯盘（Daybreak / GPT≥8% / Mac Studio 官翻·128G·M5）：**已取消**（2026-09-10 辉哥下令，早报傍晚不再查报）
 
 
@@ -50,10 +51,12 @@
 - 店内三项 + BOSS 招聘：已提醒，未收口
 - 闲鱼 YubiKey：文案已写，4 项待辉哥拍板
 - 影哨 P1 / grokbot P1：下轮修，不推 main
+- Demand Evidence V0.1 Draft PR #6：REAL_RADAR 待收，保持 Draft
 - ~~FedEx / Mac Studio / P0 盯盘~~：2026-09-10 已取消
 
 ### 本周审批清单
 - 闲鱼上架还差 4 项（价格/套装或单把/成色/发货）
+- Demand Evidence PR #6：REAL_RADAR 验收 / 是否解除 Draft / 是否合入（须点头）
 - 安全官建议撤销的报错/未认证连接器：等辉哥点头
 - grokbot / 影哨 都不推 main
 - ~~Mac Studio / FedEx 相关审批~~：盯盘已取消，除非辉哥重新开口
@@ -77,10 +80,10 @@
 
 
 ### 2026-09-14（周一）
+- [完成] 傍晚收尾 20:30（按取消盯盘规则：不查不报 P0 / FedEx / Mac 库存）。日历今晚至周二未见事件（Google Calendar 只读）。Hotmail 无连接器，未全箱扫。
+- [完成] 今日工程进展（办公侧记，非代合并）：M7-S7 小红书源码交接已落 2T `m7s7-xhs-source-handoff-20260914`；Demand Evidence V0.1 已出 Draft PR #6（`feat/douyin-demand-evidence-v0.1`，HEAD `6a38e4bf`），状态 CODE_INTEGRITY_PASS / REAL_RADAR_ACCEPTANCE_PENDING / FULL_ACCEPTANCE=INCONCLUSIVE，保持 Draft、不合并；checks contracts SUCCESS。店内三项、BOSS 招聘、XT6 三平台、闲鱼四项、影哨/grokbot P1 仍未收口。
 - [完成] 晨间总控早报 08:40（含本周编制 + 安全官第四次周审；按取消盯盘规则：不查不报 P0 / FedEx / Mac 库存）。日历今日至周二未见事件（Google Calendar 只读）。ChatGPT 要点未粘贴（整节跳过）。Hotmail 无连接器，未全箱扫。幕僚长未完成仍为：店内三项、BOSS 招聘、XT6 三平台是否已发、闲鱼 YubiKey 四项待拍板、影哨/grokbot P1。建议执行：闲鱼四项拍板 → 确认 XT6 是否已发 → 店内三项收口。派活：内容确认/补发 XT6；内容等拍板后上闲鱼；编程影哨 P1（不推 main）。待批准：闲鱼四项、安全官建议撤销报错/不用的待认证连接器。GitHub 工作记忆已更新；Mac mini 2T 可挂载，本次双写。下次安全官周审 2026-09-21。
 - [安全官] 第四次周审：报错连接器 Aws-mcp / 1Password / Appwrite-api / Slack / Railway / Datadog；待认证 Asana / Granola / Figma / Superhuman Mail / Mobbin。在用连接正常：Gmail×4、Google Calendar、X、Notion、GitHub、Google Drive、飞书、Agentmail、Composio、Sinch、Mailgun、Appwrite-docs、Coda、Craft、Wonder（相对上周：Coda/Craft 已连上，新增 Wonder）。共享电脑已登录网站：Mac mini 上 Chrome Application Support 被 macOS TCC 拒绝读取，本次未现场核域名。Always allow 未见可核漂移证据。未发现新凭证进聊天/markdown。建议辉哥点头后卸或重连报错/不用的待认证项。提醒：拆 Bot ≠ 安全边界。
-
-
 ### 2026-09-11（周五）
 - [完成] 傍晚收尾 20:25（按取消盯盘后规则：不查不报 P0 / FedEx / Mac 库存）。日历今晚至周一未见事件（Google Calendar 只读）。Hotmail 无连接器，未全箱扫。今日除晨间早报外无新收口；店内三项、BOSS 招聘、XT6 三平台、闲鱼四项、影哨/grokbot P1 仍未收口。明日（周六）重点：闲鱼四项拍板、确认 XT6 是否已发、店内三项收口。派活：内容确认/补发 XT6；内容等拍板后上闲鱼；编程影哨 P1（不推 main，可周末排）。待批准：闲鱼四项、安全官建议撤销报错连接器。GitHub 工作记忆已更新；本机 ListMachines 仅见 MacBook-Pro-4，`/Volumes/2T扩展盘` 未挂载，2T 双写暂未能执行。下次安全官周审 2026-09-21。
 - [完成] 晨间总控早报 08:50（按取消盯盘后规则：不查不报 P0 / FedEx / Mac 库存）。日历今日至周日未见事件（Google Calendar 只读）。ChatGPT 要点未粘贴（整节跳过）。Hotmail 无连接器，未全箱扫。幕僚长未完成仍为：店内三项、BOSS 招聘、XT6 三平台是否已发、闲鱼 YubiKey 四项待拍板、影哨/grokbot P1。建议执行：闲鱼四项拍板 → 确认 XT6 是否已发 → 店内三项收口。派活：内容确认/补发 XT6；内容等拍板后上闲鱼；编程影哨 P1（不推 main）。待批准：闲鱼四项、安全官建议撤销报错连接器。非周一，无本周编制/安全官周审。本地 2T 此前停在 9/10 20:50，本次与 GitHub 双写对齐。下次安全官周审 2026-09-21。
@@ -124,7 +127,7 @@
 
 ## 5. 重要记录与决策
 
-- 2026-09-14：周一早报 + 第四次安全官周审 + 本周编制。取消盯盘后首个周一。日历今日至周二无事；开放项无新收口。Coda/Craft 已连、新增 Wonder。2T 与 GitHub 双写。下次周审 2026-09-21。
+- 2026-09-14：周一早报+第四次安全官周审+傍晚收尾。取消盯盘后首个周一。日历今晚至周二无事。工程侧：M7-S7 交接落盘；Demand Evidence V0.1 Draft PR #6（HEAD 6a38e4bf，CODE_INTEGRITY_PASS，REAL_RADAR 待收，保持 Draft 不合并）。店内/XT6/闲鱼/招聘/影哨P1 仍未收口。2T 与 GitHub 双写。下次周审 2026-09-21。
 - 2026-09-11：晨间早报 + 傍晚收尾（取消盯盘后首个工作日完整按新规则）。日历今晚至周一无事；未查 P0/FedEx/Mac；开放项无新收口。GitHub 已更；2T 因盘未挂载未双写。下次周审 2026-09-14。
 - 2026-09-10：辉哥下令取消 P0 + FedEx + Mac 库存盯盘；早报傍晚 routine 已改。当日早报/收尾仍按旧规则跑过。下次周审 2026-09-14。
 - 2026-09-09：晨间早报 + 傍晚收尾。P0 全天无命中；美区 G1CDALL/A 仍缺货；中国官翻页晚间为「上新中」封面（晨间仍见 14核32核 ¥17499/¥20699/¥39799，无 128G）；M5 预购仍开。未代下单。下次周审 2026-09-14。
@@ -142,6 +145,7 @@
 
 ## 6. 待跟进 / 开放问题（Open Items）
 
+- Demand Evidence V0.1：Draft PR #6 保持草稿；REAL_RADAR_ACCEPTANCE 待收；FULL_ACCEPTANCE=INCONCLUSIVE；不合并除非辉哥点头。
 - 安全官建议撤销的报错连接器：等辉哥点头。
 - 本地规范文件日期仍标 08-20，落后 GitHub 规范 08-22（内容同为 v1.7，择机对齐日期）。
 - 2026-09-14：Mac mini 2T 已挂载并双写；本地此前停在 9/11 晨间，已对齐到本次早报。
