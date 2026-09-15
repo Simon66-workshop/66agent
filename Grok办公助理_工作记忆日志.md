@@ -78,6 +78,9 @@
 
 ## 4. 近期工作日志（Recent Logs · 最新在前）
 
+### 2026-09-15（补充 · 仓库即交接面）
+- [完成] 写入全员默认协作模式：`shared/代码项目与工作长任务默认协作模式.md`；办公规范升 v1.8；编程规范升 v1.6；统一记忆策略 + README + skill 已更新。线上 66agent 与本地 2T 双写。
+
 ### 2026-09-15（周二）
 - [完成] 傍晚收尾 20:54（按取消盯盘规则：不查不报 P0 / FedEx / Mac 库存）。日历今晚至周三未见事件（Google Calendar 只读）。Hotmail 无连接器，未全箱扫。今日完成：晨间总控早报 08:38；傍晚收尾核对。业务开放项无新收口；Demand Evidence Draft PR #6 仍 Draft（head `88e90e84…`，`feat/douyin-demand-evidence-v0.1`）。流程备忘：Astra 独立复审证据一律先上 GitHub 再出提示词。店内三项、BOSS 招聘、XT6 三平台、闲鱼四项、影哨/grokbot P1 仍未收口。GitHub 与 2T 双写。下次安全官周审 2026-09-21。
 - [完成] 晨间总控早报 08:38（按取消盯盘规则：不查不报 P0 / FedEx / Mac 库存）。日历今日至周三未见事件（Google Calendar 只读）。ChatGPT 要点未粘贴（整节跳过）。Hotmail 无连接器，未全箱扫。幕僚长未完成仍为：店内三项、BOSS 招聘、XT6 三平台是否已发、闲鱼 YubiKey 四项待拍板、影哨/grokbot P1、Demand Evidence Draft PR #6 REAL_RADAR 待收。建议执行：闲鱼四项拍板 → 确认 XT6 是否已发 → 店内三项收口。派活：内容确认/补发 XT6；内容等拍板后上闲鱼；编程影哨 P1（不推 main）。待批准：闲鱼四项、Demand Evidence PR #6 是否解除 Draft/合入、安全官建议撤销报错/不用的待认证连接器。非周一，无本周编制/安全官周审。GitHub 工作记忆已更新；Mac mini 2T 可挂载，本次双写。下次安全官周审 2026-09-21。
