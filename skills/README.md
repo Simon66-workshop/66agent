@@ -47,3 +47,4 @@
 - air-mini-tailscale.md（Air→Mini Tailscale 桌面遥控+SSH；账号备忘不含密码）
 
 - `代码项目与工作长任务默认协作模式.md` — 仓库即交接面（开发/审计/Work 长任务默认闭环）
+- 部署测试省额度.md（软件部署/试跑/落地验收默认省额度；改代码交本机 Cursor Grok，XHigh Fast；bot 只部署、测试、审计汇报）
