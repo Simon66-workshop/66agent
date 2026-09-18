@@ -1,6 +1,6 @@
 # Grok办公助理 · 工作记忆日志
 
-**最后更新**：2026-09-17 20:10（上海时间 / Asia/Shanghai）
+**最后更新**：2026-09-18 08:47（上海时间 / Asia/Shanghai）
 **维护者**：Grok办公助理  
 **用途**：防止会话记忆丢失。记录用户偏好、当前活跃事务与工作历程，供每次会话优先读取与更新。
 
@@ -78,6 +78,9 @@
 
 ## 4. 近期工作日志（Recent Logs · 最新在前）
 
+### 2026-09-18（周五）
+- [完成] 晨间总控早报 08:47（按取消盯盘规则：不查不报 P0 / FedEx / Mac 库存）。日历今日至周日未见事件（Google Calendar 只读）。ChatGPT 要点未粘贴（整节跳过）。Hotmail 无连接器，未全箱扫。幕僚长未完成仍为：店内三项、BOSS 招聘、XT6 三平台是否已发、闲鱼 YubiKey 四项待拍板、影哨/grokbot P1、Demand Evidence Draft PR #6 REAL_RADAR 待收（head `88e90e84…`，仍 Draft）、Mac 出站转发核验仍待确认。建议执行：闲鱼四项拍板 → 确认 XT6 是否已发 → 店内三项收口。派活：内容确认/补发 XT6；内容等拍板后上闲鱼；编程影哨 P1（不推 main）。待批准：闲鱼四项、Demand Evidence PR #6 是否解除 Draft/合入、安全官建议撤销报错/不用的待认证连接器。非周一，无本周编制/安全官周审。规范 GitHub 已为 v1.8。下次安全官周审 2026-09-21。
+
 ### 2026-09-17（周四）
 - [完成] 傍晚收尾 20:10（按取消盯盘规则：不查不报 P0 / FedEx / Mac 库存）。日历今晚至周五未见事件（Google Calendar 只读）。Hotmail 无连接器，未全箱扫。今日完成：晨间总控早报 08:40。业务开放项无新收口；Demand Evidence Draft PR #6 仍 Draft（head `88e90e84…`，`feat/douyin-demand-evidence-v0.1`，REAL_RADAR 仍 PENDING）。店内三项、BOSS 招聘、XT6 三平台、闲鱼四项、影哨/grokbot P1 仍未收口。Mac「通过本机转发出站流量」最终核验仍待辉哥侧确认。GitHub 与 2T 双写。下次安全官周审 2026-09-21。
 - [完成] 晨间总控早报 08:40（按取消盯盘规则：不查不报 P0 / FedEx / Mac 库存）。日历今日至周五未见事件（Google Calendar 只读）。ChatGPT 要点未粘贴（整节跳过）。Hotmail 无连接器，未全箱扫。幕僚长未完成仍为：店内三项、BOSS 招聘、XT6 三平台是否已发、闲鱼 YubiKey 四项待拍板、影哨/grokbot P1、Demand Evidence Draft PR #6 REAL_RADAR 待收（head `88e90e84…`，仍 Draft）。建议执行：闲鱼四项拍板 → 确认 XT6 是否已发 → 店内三项收口。派活：内容确认/补发 XT6；内容等拍板后上闲鱼；编程影哨 P1（不推 main）。待批准：闲鱼四项、Demand Evidence PR #6 是否解除 Draft/合入、安全官建议撤销报错/不用的待认证连接器。非周一，无本周编制/安全官周审。规范 GitHub 已为 v1.8；本地 2T 工作记忆此前停在 9/16 08:45（缺傍晚条），本次双写对齐到 GitHub。下次安全官周审 2026-09-21。
@@ -142,6 +145,7 @@
 
 ## 5. 重要记录与决策
 
+- 2026-09-18：周五晨间总控早报。日历今日至周日无事；开放项无新收口；Demand Evidence PR #6 仍 Draft（head `88e90e84…`）；Mac 出站转发核验仍待确认。下次周审 2026-09-21。
 - 2026-09-17：周四晨间总控早报。日历今日至周五无事；开放项无新收口；Demand Evidence PR #6 仍 Draft（head `88e90e84…`）；2T 与 GitHub 双写对齐（本地此前停在 9/16 晨间）。下次周审 2026-09-21。
 - 2026-09-16：周三早报+傍晚收尾。日历今晚至周四无事；开放项无新收口；Demand Evidence PR #6 仍 Draft（head `88e90e84…`）；新 box 自检 11/11 PASS（含 egress），待 Mac 出站转发核验；2T 因 ListMachines 空未傍晚双写。下次周审 2026-09-21。
 - 2026-09-15：周二早报+傍晚收尾。日历今晚至周三无事；开放项无新收口；Demand Evidence PR #6 仍 Draft（head `88e90e84…`）；Astra 复审证据先上 GitHub。下次周审 2026-09-21。
@@ -166,6 +170,7 @@
 - Demand Evidence V0.1：Draft PR #6 保持草稿；REAL_RADAR_ACCEPTANCE 待收；FULL_ACCEPTANCE=INCONCLUSIVE；不合并除非辉哥点头。
 - 安全官建议撤销的报错连接器：等辉哥点头。
 - 本地规范文件日期仍标 08-20，落后 GitHub 规范 08-22（内容同为 v1.7，择机对齐日期）。
+- 2026-09-18：晨间已双写 GitHub + 2T。
 - 2026-09-17：晨间已双写 GitHub + 2T；本地此前停在 9/16 08:45，已对齐。
 - 2026-09-16：傍晚收尾时 ListMachines 空，未能对照本地 2T；GitHub 已更新至 20:25。晨间曾双写。
 - 2026-09-14：Mac mini 2T 已挂载并双写；本地此前停在 9/11 晨间，已对齐到本次早报。
