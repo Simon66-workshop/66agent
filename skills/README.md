@@ -48,3 +48,7 @@
 
 - `代码项目与工作长任务默认协作模式.md` — 仓库即交接面（开发/审计/Work 长任务默认闭环）
 - 部署测试省额度.md（软件部署/试跑/落地验收默认省额度；改代码交本机 Cursor Grok，XHigh Fast；bot 只部署、测试、审计汇报）
+
+- Claude网络检测.md（Claude 只走指定线路；失效即停、不直连、不换节点；中转两端都查）
+
+- write-test-audit-现场测.md（Mini 现场部署/测试/盯 inbox：以产品仓 write-test-audit 为准，只做测，不自签闭合）
