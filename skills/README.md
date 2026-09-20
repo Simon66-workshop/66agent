@@ -45,7 +45,7 @@
 - hr-professional-reply.md（专业招聘回复骨架：硬条件→个性化一句→stand/next/when；软拒体面；薪资无原话不编；配 boss-message-screen）
 - boss-send-guard.md（Boss 发前核顶栏姓名；禁止把搜索人名粘进聊天框；辅助功能失败就停）
 - air-mini-tailscale.md（Air→Mini Tailscale 桌面遥控+SSH；账号备忘不含密码）
-- typesafe-ai/（TypeSafe System One / Jev typed judgments；编程式判断，不是浏览器自动化）
+- typesafe-ai/（TypeSafe System One / Jev；别名 typesafe_Jev；**2026-09-20 全员默认**：分类/过滤/路由/简单判断优先 Jev，复杂推理用各自大模型；输出须标明 Jev 步骤；key 仅 `TYPESAFE_API_KEY`）
 
 - `代码项目与工作长任务默认协作模式.md` — 仓库即交接面（开发/审计/Work 长任务默认闭环）
 - 部署测试省额度.md（软件部署/试跑/落地验收默认省额度；改代码交本机 Cursor Grok，XHigh Fast；bot 只部署、测试、审计汇报）

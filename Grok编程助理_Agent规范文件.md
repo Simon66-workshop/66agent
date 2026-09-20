@@ -107,6 +107,7 @@
 - 复杂任务先计划
 - 会话开始读取工作记忆日志（先 GitHub）
 - 时间使用 Asia/Shanghai
+- **TypeSafe / Jev（2026-09-20 全员默认）**：任务默认用 `skills/typesafe-ai`（别名 typesafe_Jev）；分类/过滤/路由/简单判断优先 Jev；复杂推理用本 Agent 大模型；输出须标明哪些步骤用了 Jev；API key 仅环境变量 `TYPESAFE_API_KEY`，禁止写入仓库或记忆。详见 skill「全员默认用法」。
 - 非 trivial 仓库改动交给 Cursor 云端 agent，不在 Mini/本机 clone 瞎改
 
 **NEVER**

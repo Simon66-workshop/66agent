@@ -1,6 +1,6 @@
 # Grok办公助理 · 工作记忆日志
 
-**最后更新**：2026-09-20 20:30（上海时间 / Asia/Shanghai）
+**最后更新**：2026-09-20 23:30（上海时间 / Asia/Shanghai）
 **维护者**：Grok办公助理  
 **用途**：防止会话记忆丢失。记录用户偏好、当前活跃事务与工作历程，供每次会话优先读取与更新。
 
@@ -79,6 +79,7 @@
 ## 4. 近期工作日志（Recent Logs · 最新在前）
 
 ### 2026-09-20（周日）
+- [完成] 全员已通知用 Jev（TypeSafe / typesafe-ai；分类过滤路由优先 Jev，复杂推理用各自大模型；输出标明 Jev 步骤；key 仅 TYPESAFE_API_KEY）。
 - [完成] 傍晚收尾 ~20:30（周日无晨间早报 routine）。按取消盯盘规则：不查不报 P0 / FedEx / Mac 库存。日历：list_events 未返回事件列表（连接器 quirk），按今晚至周一无已列事件处理。Hotmail 未全箱扫；另有 Hotmail 定时查收约 187s，验证码 771906，邮件日期 9/15。今日完成：Mini LaunchAgents 自启 Grok Bot/Cursor/Codex；TypeSafe skill 双写提交 `20ba6c1` + 2T；二创状态检查。业务开放项无新收口：闲鱼四项、XT6、店内三项、BOSS、影哨/grokbot P1、Mac 出站转发核验仍待确认。Demand Evidence PR #6：GitHub API 显示已于 2026-09-18 17:00 UTC 合并（head `88e90e84…`）；此前记忆仍写 Draft——已对齐为「GitHub 已合并，但 REAL_RADAR 仍 PENDING（按 PR body）」。学习闭环未触发。GitHub 与 2T 双写。下次安全官周审 2026-09-21（周一）。
 
 ### 2026-09-18（周五）
