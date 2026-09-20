@@ -1,6 +1,6 @@
 # Grok办公助理 · 工作记忆日志
 
-**最后更新**：2026-09-18 20:16（上海时间 / Asia/Shanghai）
+**最后更新**：2026-09-20 20:30（上海时间 / Asia/Shanghai）
 **维护者**：Grok办公助理  
 **用途**：防止会话记忆丢失。记录用户偏好、当前活跃事务与工作历程，供每次会话优先读取与更新。
 
@@ -42,7 +42,7 @@
 - [x] FedEx 清关 876354475173：**已取消盯盘**（2026-09-10 辉哥下令，不再查报）
 - [ ] 影哨 P1 下轮：sanitize IPv6/数字开头 hostname；PR#3 四条。不推 main
 - [ ] grokbot P1 下轮（PR#3 有条件通过后记下）。不推 main
-- [ ] Demand Evidence V0.1：Draft PR #6 REAL_RADAR 验收 / 是否合入（须辉哥点头；不推 main）
+- [ ] Demand Evidence V0.1：PR #6 已在 GitHub 合并（2026-09-18 17:00 UTC，head `88e90e84…`）；REAL_RADAR 仍 PENDING（按 PR body）；FULL_ACCEPTANCE=INCONCLUSIVE；后续 REAL_RADAR/验收推进须辉哥点头；不推 main
 - [x] P0 盯盘（Daybreak / GPT≥8% / Mac Studio 官翻·128G·M5）：**已取消**（2026-09-10 辉哥下令，早报傍晚不再查报）
 
 
@@ -51,12 +51,12 @@
 - 店内三项 + BOSS 招聘：已提醒，未收口
 - 闲鱼 YubiKey：文案已写，4 项待辉哥拍板
 - 影哨 P1 / grokbot P1：下轮修，不推 main
-- Demand Evidence V0.1 Draft PR #6：REAL_RADAR 待收，保持 Draft
+- Demand Evidence V0.1 PR #6：GitHub 已合并（2026-09-18 17:00 UTC，head `88e90e84…`）；REAL_RADAR 仍 PENDING（按 PR body）
 - ~~FedEx / Mac Studio / P0 盯盘~~：2026-09-10 已取消
 
 ### 本周审批清单
 - 闲鱼上架还差 4 项（价格/套装或单把/成色/发货）
-- Demand Evidence PR #6：REAL_RADAR 验收 / 是否解除 Draft / 是否合入（须点头）
+- Demand Evidence PR #6：已合入 GitHub；REAL_RADAR 仍 PENDING——是否推进 REAL_RADAR / 后续验收（须点头）
 - 安全官建议撤销的报错/未认证连接器：等辉哥点头
 - grokbot / 影哨 都不推 main
 - ~~Mac Studio / FedEx 相关审批~~：盯盘已取消，除非辉哥重新开口
@@ -77,6 +77,9 @@
 ---
 
 ## 4. 近期工作日志（Recent Logs · 最新在前）
+
+### 2026-09-20（周日）
+- [完成] 傍晚收尾 ~20:30（周日无晨间早报 routine）。按取消盯盘规则：不查不报 P0 / FedEx / Mac 库存。日历：list_events 未返回事件列表（连接器 quirk），按今晚至周一无已列事件处理。Hotmail 未全箱扫；另有 Hotmail 定时查收约 187s，验证码 771906，邮件日期 9/15。今日完成：Mini LaunchAgents 自启 Grok Bot/Cursor/Codex；TypeSafe skill 双写提交 `20ba6c1` + 2T；二创状态检查。业务开放项无新收口：闲鱼四项、XT6、店内三项、BOSS、影哨/grokbot P1、Mac 出站转发核验仍待确认。Demand Evidence PR #6：GitHub API 显示已于 2026-09-18 17:00 UTC 合并（head `88e90e84…`）；此前记忆仍写 Draft——已对齐为「GitHub 已合并，但 REAL_RADAR 仍 PENDING（按 PR body）」。学习闭环未触发。GitHub 与 2T 双写。下次安全官周审 2026-09-21（周一）。
 
 ### 2026-09-18（周五）
 - [完成] 傍晚收尾 20:16（按取消盯盘规则：不查不报 P0 / FedEx / Mac 库存）。日历今晚至周日未见事件（Google Calendar 只读）。Hotmail 无连接器，未全箱扫。今日完成：晨间总控早报 08:47。业务开放项无新收口；Demand Evidence Draft PR #6 仍 Draft（head `88e90e84…`，`feat/douyin-demand-evidence-v0.1`，REAL_RADAR 仍 PENDING，CODE_INTEGRITY_PASS / FULL_ACCEPTANCE=INCONCLUSIVE）。店内三项、BOSS 招聘、XT6 三平台、闲鱼四项、影哨/grokbot P1 仍未收口。Mac「通过本机转发出站流量」最终核验仍待辉哥侧确认。GitHub 与 2T 双写。下次安全官周审 2026-09-21。
@@ -146,7 +149,8 @@
 
 ## 5. 重要记录与决策
 
-- 2026-09-18：周五早报+傍晚收尾。日历今晚至周日无事；开放项无新收口；Demand Evidence PR #6 仍 Draft（head `88e90e84…`）；Mac 出站转发核验仍待确认；GitHub+2T 双写。下次周审 2026-09-21。
+- 2026-09-20：周日傍晚收尾 ~20:30（无晨间 routine）。今日完成 Mini LaunchAgents 自启、TypeSafe skill `20ba6c1`+2T、Hotmail 定时查收（~187s / 771906 / 9/15）、二创状态检查；未查 P0/FedEx/Mac。日历 list_events 无列表（quirk）→ 今晚至周一按无已列事件。Demand Evidence PR #6 记忆对齐：GitHub 已合并（2026-09-18 17:00 UTC，head `88e90e84…`），REAL_RADAR 仍 PENDING。开放项仍：闲鱼四项、XT6、店内三项、BOSS、影哨/grokbot P1、Mac egress 核验。学习闭环未触发。下次周审 2026-09-21。
+- 2026-09-18：周五早报+傍晚收尾。日历今晚至周日无事；开放项无新收口；Demand Evidence PR #6 当时记忆仍写 Draft（head `88e90e84…`；后于同日 17:00 UTC 在 GitHub 合并，见 9/20 对齐）；Mac 出站转发核验仍待确认；GitHub+2T 双写。下次周审 2026-09-21。
 - 2026-09-17：周四晨间总控早报。日历今日至周五无事；开放项无新收口；Demand Evidence PR #6 仍 Draft（head `88e90e84…`）；2T 与 GitHub 双写对齐（本地此前停在 9/16 晨间）。下次周审 2026-09-21。
 - 2026-09-16：周三早报+傍晚收尾。日历今晚至周四无事；开放项无新收口；Demand Evidence PR #6 仍 Draft（head `88e90e84…`）；新 box 自检 11/11 PASS（含 egress），待 Mac 出站转发核验；2T 因 ListMachines 空未傍晚双写。下次周审 2026-09-21。
 - 2026-09-15：周二早报+傍晚收尾。日历今晚至周三无事；开放项无新收口；Demand Evidence PR #6 仍 Draft（head `88e90e84…`）；Astra 复审证据先上 GitHub。下次周审 2026-09-21。
@@ -168,9 +172,10 @@
 
 ## 6. 待跟进 / 开放问题（Open Items）
 
-- Demand Evidence V0.1：Draft PR #6 保持草稿；REAL_RADAR_ACCEPTANCE 待收；FULL_ACCEPTANCE=INCONCLUSIVE；不合并除非辉哥点头。
+- Demand Evidence V0.1：PR #6 已在 GitHub 合并（2026-09-18 17:00 UTC，head `88e90e84…`）；REAL_RADAR_ACCEPTANCE 仍 PENDING（按 PR body）；FULL_ACCEPTANCE=INCONCLUSIVE；后续 REAL_RADAR/验收推进须辉哥点头。
 - 安全官建议撤销的报错连接器：等辉哥点头。
 - 本地规范文件日期仍标 08-20，落后 GitHub 规范 08-22（内容同为 v1.7，择机对齐日期）。
+- 2026-09-20：傍晚收尾双写 GitHub + 2T（周日无晨间）。
 - 2026-09-18：晨间与傍晚均已双写 GitHub + 2T。
 - 2026-09-17：晨间已双写 GitHub + 2T；本地此前停在 9/16 08:45，已对齐。
 - 2026-09-16：傍晚收尾时 ListMachines 空，未能对照本地 2T；GitHub 已更新至 20:25。晨间曾双写。
