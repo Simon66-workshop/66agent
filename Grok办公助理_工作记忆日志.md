@@ -1,6 +1,6 @@
 # Grok办公助理 · 工作记忆日志
 
-**最后更新**：2026-09-20 23:30（上海时间 / Asia/Shanghai）
+**最后更新**：2026-09-21 08:40（上海时间 / Asia/Shanghai）
 **维护者**：Grok办公助理  
 **用途**：防止会话记忆丢失。记录用户偏好、当前活跃事务与工作历程，供每次会话优先读取与更新。
 
@@ -63,7 +63,7 @@
 
 ### 活跃提醒
 - 工作日 08:30 早报、20:00 傍晚收尾（**不再含 P0 / FedEx / Mac 库存盯盘**）
-- 下一次安全官周审：2026-09-21（周一）
+- 下一次安全官周审：2026-09-28（周一）
 
 ---
 
@@ -72,11 +72,15 @@
 - 工作日 08:30 晨间总控早报（含幕僚长：未完成 / 派活 / 待批准）
 - 工作日 20:00 傍晚收尾（含幕僚长三块）
 - **每周一 08:30**：幕僚长周复盘（本周编制）+ 安全官周审
-- 下一次安全官周审：2026-09-21
+- 下一次安全官周审：2026-09-28
 
 ---
 
 ## 4. 近期工作日志（Recent Logs · 最新在前）
+
+### 2026-09-21（周一）
+- [完成] 晨间总控早报 ~08:40（含本周编制 + 安全官第五次周审；按取消盯盘规则：不查不报 P0 / FedEx / Mac 库存）。日历今日至本周未见已列事件（Google Calendar 只读；list_events 仅返回日历元数据 quirk）。ChatGPT 要点未粘贴（整节跳过）。Hotmail/Outlook 连接器已连，本轮未全箱扫。幕僚长未完成仍为：店内三项、BOSS 招聘、XT6 三平台是否已发、闲鱼 YubiKey 四项待拍板、影哨/grokbot P1、Demand Evidence PR #6 已合入（head `88e90e84…`，REAL_RADAR 仍 PENDING）、Mac 出站转发核验仍待确认。建议执行：闲鱼四项拍板 → 确认 XT6 是否已发 → 店内三项收口。派活：内容确认/补发 XT6；内容等拍板后上闲鱼；编程影哨 P1（不推 main）。待批准：闲鱼四项、Demand Evidence REAL_RADAR/验收是否推进、安全官建议撤销报错/不用的待认证连接器。规范 GitHub 为 v1.8。Jev：本机 `TYPESAFE_API_KEY` 未设，本轮开放项排序由本模型完成、未调 Jev。GitHub 与 2T 双写。下次安全官周审 2026-09-28。
+- [安全官] 第五次周审：报错连接器 Aws-mcp / 1Password / Appwrite-api / Railway / Datadog / Supermemory；待认证 Asana / Slack / Superhuman Mail / Mobbin / Inkbox / Gitbook / Dnb-dplus-mcp。在用连接正常：Gmail×4、Google Calendar、X、Notion、GitHub、Google Drive、飞书、Agentmail、Composio、Sinch、Mailgun、Appwrite-docs、Coda、Craft、Wonder、Granola、Figma、Outlook×5（含 Hotmail 多箱；相对上周：Granola/Figma/Outlook 已连上）。另有 xAI 侧连接器：Gmail / Drive / Calendar / Outlook / Outlook Calendar / X Ads / GitHub / Canva / Notion / Figma / HyperFrames。共享电脑已登录网站：本轮未现场扫 Chrome 登录域名（避免 TCC/凭证触达）。Always allow 未见可核漂移证据。未发现新凭证进聊天/markdown。建议辉哥点头后卸报错项、卸或认证不用的待认证项。提醒：拆 Bot ≠ 安全边界。
 
 ### 2026-09-20（周日）
 - [完成] 全员已通知用 Jev（TypeSafe / typesafe-ai；分类过滤路由优先 Jev，复杂推理用各自大模型；输出标明 Jev 步骤；key 仅 TYPESAFE_API_KEY）。
@@ -150,6 +154,7 @@
 
 ## 5. 重要记录与决策
 
+- 2026-09-21：周一晨间早报+第五次安全官周审。日历无事；开放项无新收口；Demand PR #6 已合入、REAL_RADAR PENDING；Outlook/Granola/Figma 已连；报错/待认证连接器待辉哥点头清理。下次周审 2026-09-28。
 - 2026-09-20：周日傍晚收尾 ~20:30（无晨间 routine）。今日完成 Mini LaunchAgents 自启、TypeSafe skill `20ba6c1`+2T、Hotmail 定时查收（~187s / 771906 / 9/15）、二创状态检查；未查 P0/FedEx/Mac。日历 list_events 无列表（quirk）→ 今晚至周一按无已列事件。Demand Evidence PR #6 记忆对齐：GitHub 已合并（2026-09-18 17:00 UTC，head `88e90e84…`），REAL_RADAR 仍 PENDING。开放项仍：闲鱼四项、XT6、店内三项、BOSS、影哨/grokbot P1、Mac egress 核验。学习闭环未触发。下次周审 2026-09-21。
 - 2026-09-18：周五早报+傍晚收尾。日历今晚至周日无事；开放项无新收口；Demand Evidence PR #6 当时记忆仍写 Draft（head `88e90e84…`；后于同日 17:00 UTC 在 GitHub 合并，见 9/20 对齐）；Mac 出站转发核验仍待确认；GitHub+2T 双写。下次周审 2026-09-21。
 - 2026-09-17：周四晨间总控早报。日历今日至周五无事；开放项无新收口；Demand Evidence PR #6 仍 Draft（head `88e90e84…`）；2T 与 GitHub 双写对齐（本地此前停在 9/16 晨间）。下次周审 2026-09-21。
@@ -176,6 +181,7 @@
 - Demand Evidence V0.1：PR #6 已在 GitHub 合并（2026-09-18 17:00 UTC，head `88e90e84…`）；REAL_RADAR_ACCEPTANCE 仍 PENDING（按 PR body）；FULL_ACCEPTANCE=INCONCLUSIVE；后续 REAL_RADAR/验收推进须辉哥点头。
 - 安全官建议撤销的报错连接器：等辉哥点头。
 - 本地规范文件日期仍标 08-20，落后 GitHub 规范 08-22（内容同为 v1.7，择机对齐日期）。
+- 2026-09-21：晨间早报双写 GitHub + 2T（含周审）。
 - 2026-09-20：傍晚收尾双写 GitHub + 2T（周日无晨间）。
 - 2026-09-18：晨间与傍晚均已双写 GitHub + 2T。
 - 2026-09-17：晨间已双写 GitHub + 2T；本地此前停在 9/16 08:45，已对齐。
