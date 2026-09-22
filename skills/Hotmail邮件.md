@@ -1,59 +1,71 @@
 ---
 name: Hotmail邮件
 description: >-
-  辉哥要查、读、搜 Hotmail（Outlook.com）邮件、验证码，或起草发出时用。三个箱都已登录，没有 Outlook MCP。
-  验证码走 login_hint + 全箱搜索（含垃圾邮件），不要扫整页收件箱。
+  辉哥要查、读、搜 Hotmail（Outlook.com）邮件、验证码，或起草发出时用。验证码默认走 Outlook
+  MCP（先 get_me 核身份）；错箱停报；MCP 不可用再 login_hint 网页全箱搜（含垃圾箱）。
 ---
-# Hotmail / Outlook.com 邮件
+# Hotmail / Outlook.com
 
-辉哥的 Hotmail 没有 Outlook MCP。收发一律走已登录的 Outlook 网页。三个箱都已登录，按「一个箱一条线」管，互不混。
+三个 Hotmail 箱按「一个箱一条线」管，互不混。辉哥点名了箱就只动那一箱；没点名先问。
 
-**验证码是快路径。** 不要 SearchPlugins、不要找 Outlook 连接器、不要先刷整页收件箱、不要等右侧预览慢慢加载。直接 login_hint 进箱，搜索范围扩到整个邮箱（含垃圾邮件），打开最新一封有 6 位数的，立刻回报。
+**验证码是快路径。** 默认 **Outlook MCP**；挂名≠真实身份时必须停。MCP 不可用再走网页 `login_hint`。不要 SearchPlugins、不要扫整页收件箱交差。
 
-## 账号
+## 账号与 MCP 挂名
 
-| 账号 | 显示名 | 入口 |
-| --- | --- | --- |
-| `jari6688@hotmail.com` | jari wu | https://outlook.live.com/mail/0/?login_hint=jari6688@hotmail.com |
-| `simonwu.chi@hotmail.com` | wu simon | https://outlook.live.com/mail/0/?login_hint=simonwu.chi@hotmail.com |
-| `sheryhu6688@hotmail.com` | sheryhu | https://outlook.live.com/mail/0/?login_hint=sheryhu6688@hotmail.com |
+| 账号 | 显示名 | Outlook MCP namespace | login_hint |
+| --- | --- | --- | --- |
+| `jari6688@hotmail.com` | jari wu | `user-Outlook--jari6688-hotmail-com` | https://outlook.live.com/mail/0/?login_hint=jari6688@hotmail.com |
+| `simonwu.chi@hotmail.com` | wu simon | `user-Outlook--simonwu-chi-hotmail-com` | https://outlook.live.com/mail/0/?login_hint=simonwu.chi@hotmail.com |
+| `sheryhu6688@hotmail.com` | sheryhu | `user-Outlook--sheryhu6688-hotmail-com` | https://outlook.live.com/mail/0/?login_hint=sheryhu6688@hotmail.com |
 
-- 切箱只用上面的 `login_hint` 链接。不要点右上角头像切。
-- 登录会话长期有效。不要每次重登，不要登出一个保另一个。
-- 碰到登录墙、2FA：把电脑交给辉哥，自己不看、不问、不代填密码。
-- Gmail 是另一套 skill（`Gmail邮件.md`），不要和 Hotmail 混。
-- 辉哥没指定箱：先问。点名了就只开那一箱。
+另有 `user-Outlook`（default）与 `user-Outlook--simonwu87-outlook-com`：查 Hotmail 验证码时 **不要** 用它们顶替上表三箱，除非辉哥明确点名对应账号。
 
-## 验证码快路径（默认）
+- 切网页箱只用 `login_hint`。不要点右上角头像切。
+- 登录墙 / 2FA / 通行密钥：停，把电脑交给辉哥；不代填密码。
+- Gmail 走另一套 skill，不要和 Hotmail 混。
+
+## 验证码快路径（默认 · MCP）
 
 辉哥说「验证码」「登录代码」「最新验证码」时走这里。
 
-1. 立刻打开指定箱的 `login_hint` 链接。错箱再开一次 hint，不要点头像。
-2. 顶部搜索框一次搜：`登录代码 OR 验证码 OR verification code`  
-   搜索范围改成「整个邮箱 / All folders」，必须包含「垃圾邮件 / Junk」。不要只搜重点收件箱。
-3. 结果按时间最新。打开第一封正文里有 6 位数字的。
-   - 「临时登录代码 / 验证码 / security code」：有 6 位数，这才是码。
-   - 「New sign-in / 新登录通知」：没有码，跳过。
-4. 全箱搜索结果里没有码：再点左侧「垃圾邮件」搜同一词一次。仍没有才说没有。不要从头刷未读列表。
-5. 只报最新有效码。每次重新搜，不用上一轮旧码。码在垃圾箱也要报，并说一声在垃圾箱。
-6. 回报一行：哪个箱、码、哪家、上海时间、是否垃圾箱。不要截图、不要复述整封信。
+1. 选定上表对应 namespace（按辉哥点名的邮箱）。
+2. **先 `get_me`。** `mail` / `userPrincipalName` 必须等于目标邮箱（大小写不敏感）。  
+   - **不相等**：立刻停。不得用搜到的码交差。向辉哥说明「挂名是 X、实际是 Y」；需要时请他同意对该挂名 `force_reauth`（登录卡须选真正目标箱）。  
+   - 调用报「namespace does not exist」等：重启该 MCP 一次再试；仍失败 → 走网页后备，并说一声 MCP 暂不可用。
+3. 身份核对通过后 `list_mail_messages`：  
+   - `search`：`验证码 OR "verification code" OR "登录代码" OR "临时登录" OR "security code"`（可按语言微调，但须覆盖中英临时码主题）  
+   - `bodyFormat`: `text`；`top` ≥ 5；按 `receivedDateTime` 最新优先（接口默认新到旧即可）  
+   - 可选再扫 `mailFolder=junkemail` 同一 search，以免码只在垃圾箱。
+4. 选最新一封 **正文/预览含 6 位数字** 且主题像临时登录码 / verification / security code 的。  
+   - 「New sign-in / 新登录通知」无码 → 跳过。  
+   - 不编造、不用上一轮旧码。
+5. 回报一行：哪个箱、码、哪家（如 ChatGPT）、上海时间、是否垃圾箱。不截图、不复述整封信。
 
-浏览器任务必须写死这 6 步。登录墙才停。
+## 验证码后备（网页 · login_hint）
+
+仅当：MCP 不可用、身份错箱待重登但辉哥要马上看码、或辉哥明确说走网页。
+
+1. 打开该箱 `login_hint` URL。错箱再开一次 hint，不要点头像。
+2. 搜：`登录代码 OR 验证码 OR verification code`；范围 = 整个邮箱 / All folders（含 Junk）。
+3. 打开最新有 6 位数临时码的邮件；Junk 再搜一次仍无才说没有。
+4. 回报格式同 MCP。登录墙 / FIDO 停，交给辉哥。
+5. box 打不开 Outlook 时：可改 Mini 本机已登录浏览器同一 `login_hint`；仍须确认页面账号是目标箱。
 
 ## 普通读信
 
-不是验证码时才打开收件箱。不要为了找码走这条。
+不是验证码时才打开收件箱列表。MCP 可用时优先 `list_mail_messages` / `get_mail_message`；同样先 `get_me` 核身份。
 
 ## 写信 / 发信
 
-1. 先确认从哪个箱发。
+1. 先确认从哪个箱发，并 `get_me` 核对。
 2. 先起草，不要直接点发送。
-3. 把发件箱、收件人、主题、正文给辉哥看，等他明确说发，再发。
+3. 发件箱、收件人、主题、正文给辉哥看，等他明确说发再发。
 4. 没确认过的邮件一律不发。
 
 ## 禁止
 
+- 不把挂名当身份；`get_me` 不等于目标箱时禁止用该连接器的码/信交差。
 - 不编造未读数、验证码、邮件内容。
 - 不把验证码发给别人或别的助理，除非辉哥当场要。
-- 不在没登录时改走 Gmail 或让辉哥截图交差。
-- 查验证码时不 SearchPlugins、不扫整页收件箱、不点头像切箱、不只看收件箱而漏掉垃圾箱。
+- 不在没登录时改走 Gmail 或让辉哥截图交差（除非他主动要）。
+- 查验证码时不 SearchPlugins、不扫整页收件箱充数、不点头像切箱、不只看收件箱而漏掉垃圾箱。

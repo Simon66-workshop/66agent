@@ -22,7 +22,7 @@
 - 去AI味与人类感检查清单.md
 - 本地AI-Agent部署与维护SOP.md
 - 内容创作平台适配指南.md
-- Hotmail邮件.md（验证码走 login_hint + 全箱搜索，含垃圾邮件）
+- Hotmail邮件.md（验证码默认 Outlook MCP + get_me 核身份；错箱停；MCP 不可用再 login_hint 全箱搜含垃圾箱）
 - Gmail邮件.md（四箱连接器快搜；收件箱+垃圾箱；不要开浏览器）
 - 登陆Claude订阅付费.md（Team 登陆+开通+加座；登录/2FA/付款必须停。问问题走 `找Claude问问题.md`）
 - 找Claude问问题.md（已登录交叉验证；不登陆、不付费。订阅付费走 `登陆Claude订阅付费.md`）
