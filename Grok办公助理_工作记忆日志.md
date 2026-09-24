@@ -169,6 +169,8 @@
 
 ## 5. 重要记录与决策
 
+- 2026-09-24：傍晚收尾 ~20:11。日历：杭州 AI Field Week 至 9/25 20:00（今日云栖/DEMO 尾日 + 数贸会优先日）。今日助理侧完成：晨间早报（GitHub d40ee14，晨间时 Mini 断未写 2T）、Google OAuth json 备份至 2T `资料/Google-OAuth/`、X运营Bot 规矩已落档、昨夜 Grok Bot 断联诊断为 Shadowrocket 增强模式隧道抖动。杭州现场产出未由辉哥回传，未编造。业务开放项无新收口。未查 P0/FedEx/Mac。学习闭环未触发。下次安全官周审 2026-09-28。
+
 - 2026-09-24：晨间早报。杭州 AI Field Week 云栖/DEMO 尾日 + 数贸会优先日；开放项无新收口；Demand PR #6 已合入、REAL_RADAR PENDING；未查 P0/FedEx/Mac。Mini 离线未写 2T。下次周审 2026-09-28。
 - 2026-09-23：晨间早报。杭州 AI Field Week 第2天（云栖+DEMO CHINA）；开放项无新收口；Demand PR #6 已合入、REAL_RADAR PENDING；未查 P0/FedEx/Mac。下次周审 2026-09-28。
 - 2026-09-22：晨间早报。杭州 AI Field Week 首日（云栖起）；开放项无新收口；Demand PR #6 已合入、REAL_RADAR PENDING；未查 P0/FedEx/Mac。下次周审 2026-09-28。
@@ -196,6 +198,8 @@
 ---
 
 ## 6. 待跟进 / 开放问题（Open Items）
+
+- 2026-09-24：傍晚已写；补晨间 2T 双写；杭州现场成果/XT6 是否已发待辉哥补充。
 
 - 2026-09-24：晨间已写 GitHub；Mini disconnected，2T 未双写；杭州 Field Week 云栖/DEMO 尾日 + 数贸会优先日。
 - 2026-09-23：晨间已双写 GitHub + Mini 2T；杭州 Field Week 第2天（云栖+DEMO）。
