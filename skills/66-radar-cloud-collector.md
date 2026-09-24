@@ -2,14 +2,15 @@
 name: 66-radar-cloud-collector
 description: >-
   use this when 66Workshop 抖音雷达云端任务：搜索筛选采集、Drive 交付与最终 receipt；不含 Mac 上
-  wait_receipt/ack_receipt，不装 Codex MCP，不自选 Codex thread/模型/cwd/shell。
+  wait_receipt/ack_receipt，不装 Codex MCP，不自选 Codex thread/模型/cwd/shell。Jev
+  只接语义筛选（topic_relevant 等），不进回执传输层。
 ---
 # 66-radar-cloud-collector
 
 云端执行面：搜索 → 筛选 → 采集 → Drive 材料 → **最后** receipt → 本 Bot 聊天通知。  
 **不属于本 Skill**：安装 Codex MCP；Mac 上的 `wait_receipt` / `ack_receipt`；本地分析、ASR、主稿（Codex/Mini）。
 
-配套只读：`douyin-daily-opportunity-radar`、`box-observe-download-douyin`、`download-observed-douyin-video`，以及任务指定的 66Workshop 雷达 Skill / decision-policy（以任务给出的固定 SHA 为准）。
+配套只读：`douyin-daily-opportunity-radar`、`box-observe-download-douyin`、`download-observed-douyin-video`、`typesafe-ai`（Jev），以及任务指定的 66Workshop 雷达 Skill / decision-policy（以任务给出的固定 SHA 为准）。
 
 ---
 
@@ -34,7 +35,7 @@ description: >-
 
 ---
 
-## 2. 采集
+## 2. 采集与 Jev 接法（Grok 端）
 
 按现有 66Workshop 雷达 Skill 与**当前任务预算**执行。
 
@@ -47,14 +48,39 @@ description: >-
 | 每日优先深拆 | ≤1 |
 | 入选作品可见评论样本 | ≤8 |
 
-流程：
+### 2.1 流程（Jev 要接，但不进回执传输层）
 
-1. 先搜索候选；记录 `work_id`（字符串）、URL、题面、时间显示、公开指标原文。
+1. 先搜索候选（目标最多 20）；记录 `work_id`（字符串）、URL、题面、时间显示、公开指标原文。
 2. **确定性规则先过滤**（窗内、去重、exclude、预算、登录/访问态）。
-3. **仅**决策策略列出的窄语义岔路，才走已批准的 Jev 路径；无合法适配器则标 `JEV_NOT_RUN`，不粘贴密钥、不虚报。
-4. 验证码、限流、访问拒绝、账号异常：**不绕过、不自动盲重试**；该段停并写入真实 `BLOCKED` / `FAILED` 原因。
-5. 评论必须绑定正确 `work_id`；父级不明确标 `UNKNOWN`，不靠相邻位置猜测；作品 ID 变化即停该采样。
-6. 未知时间 / 相对时间（如「2天前」）在无法核绝对时刻前：**不算窗内**，除非任务明文授权重判规则。
+3. **再**用 Jev 做窄语义判断（见 2.2），从通过规则的候选里选详情位（最多 5）。
+4. 再决定优先深拆 1 条（任务预算内）。
+5. 验证码、限流、访问拒绝、账号异常：**不绕过、不自动盲重试**；该段停并写入真实 `BLOCKED` / `FAILED` 原因。
+6. 评论必须绑定正确 `work_id`；父级不明确标 `UNKNOWN`，不靠相邻位置猜测；作品 ID 变化即停该采样。
+7. 未知时间 / 相对时间（如「2天前」）在无法核绝对时刻前：**不算窗内**，除非任务明文授权重判规则。
+
+### 2.2 Jev 应该出现在（语义筛选，省额度）
+
+在「确定性规则之后 → 选详情 / 定深拆之前」，对仍需语义理解的候选问例如：
+
+- `topic_relevant`
+- `concrete_decision_problem`
+- `source_already_answers`
+
+（以任务 `decision-policy` / 已批准语义问题清单为准；无合法适配器则标 `JEV_NOT_RUN`，不粘贴密钥、不虚报。）
+
+产出须标明：哪些步用了 Jev，哪些步用了本模型。走 `typesafe-ai` / `TYPESAFE_API_KEY`。
+
+### 2.3 Jev 不应该出现在（回执传输层 / 程序态）
+
+下列全部用**程序判断**，禁止调 Jev / 大模型猜：
+
+- 文件传完了吗？
+- Drive 上传了吗？
+- 该发给哪个线程？
+- receipt 是否已落盘、`file_id` / bytes / sha256 是否齐全
+- 同 `request_id` 是否已有可复用成果
+
+**不要把 Jev 装进回执传输层。** 否则是加调用，不是省额度。
 
 ---
 
@@ -156,6 +182,7 @@ receipt 落盘并上传成功后，在**当前 Bot 聊天**通知（不等待 Co
 - `request_id`
 - 完成了哪些材料（类型 + `drive_file_id`，按需）
 - 是否存在 `BLOCKED` / `UNKNOWN`
+- 若跑了语义筛选：是否 `JEV_RUN` / `JEV_NOT_RUN`（一句即可）
 
 云任务以材料 + receipt + 本聊天通知收口；**不要**因未收到 Codex 确认而重采。
 
@@ -184,6 +211,7 @@ receipt 落盘并上传成功后，在**当前 Bot 聊天**通知（不等待 Co
 - 不重复下载旧控制视频
 - 不扩大样本、不放宽窗口、不启用新收费服务
 - 不装 Codex MCP；`wait_receipt` / `ack_receipt` 仍只在 Mac 原线程
+- **回执传输层不接 Jev**；语义筛选层才接
 
 ---
 
@@ -191,6 +219,7 @@ receipt 落盘并上传成功后，在**当前 Bot 聊天**通知（不等待 Co
 
 - [ ] 身份字段均来自受信分配，未自造 thread/session
 - [ ] 预算与 exclude 未越权
+- [ ] 语义筛选才用 Jev；回执/上传/线程路由全用程序
 - [ ] 材料均有 `drive_file_id` / bytes / sha256 / mime / artifact_type
 - [ ] receipt **最后**创建，status 诚实
 - [ ] 安全禁写项未出现
