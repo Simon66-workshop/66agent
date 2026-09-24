@@ -10,7 +10,8 @@ description: use this when 辉哥问 Jev / TypeSafe 用了多少、还剩多少�
 
 - TypeSafe **API 不提供用量、余额或额度接口**。`GET https://api.typesafe.ai/v1/usage` 返回 404；响应头里也没有剩余次数之类的限流信息，只有超限时报 `429`（过载是 `529`）。
 - 每次 `POST https://api.typesafe.ai/v1/systemone` 的返回里带 `usage.input_tokens` / `usage.output_tokens`，只代表**这一次**的消耗。
-- 真实累计用量与额度只在控制台 `https://console.typesafe.ai/`（Key 在这里创建）。辉哥用 **Gmail（Google 登录）** 进控制台。
+- 真实累计用量与额度只在控制台 `https://console.typesafe.ai/`（Key 在这里创建）。
+- **登录账号：`simonwu.chi@gmail.com`**（辉哥 2026-09-24 指定的默认邮箱），走 Google 登录。
 - Key 只从环境变量 `TYPESAFE_API_KEY` 读。不打印、不进仓库、不进记忆、不进聊天。
 
 ## 步骤
@@ -25,9 +26,9 @@ description: use this when 辉哥问 Jev / TypeSafe 用了多少、还剩多少�
    - `401`：Key 失效或错误，提醒辉哥去控制台重建，用安全输入框补（绝不让他贴在聊天里）。
    - 被 Auto-review 拦截：把拦截原因告诉辉哥，问他是否放行，不绕路。
 2. **控制台看用量和额度**
-   - 用浏览器打开 `https://console.typesafe.ai/`，选 Google 登录。
-   - 登录用哪个 Gmail：以辉哥指定或上次记录为准；不确定就先在各 Gmail 箱搜 `typesafe` 注册/账单邮件判断，仍不确定再问辉哥。
-   - 遇到 Google 密码、2FA、验证码、passkey：把浏览器交给辉哥亲手完成，不代填、不取 cookie/token。
+   - 用浏览器打开 `https://console.typesafe.ai/`，选 Google 登录，账号选 `simonwu.chi@gmail.com`。
+   - **需要邮件验证码时**：辉哥已授权直接用 Gmail 连接器（默认箱 `user-Gmail`，即 simonwu.chi@gmail.com）搜最新的 Google / TypeSafe 验证码邮件，取码填入完成登录。只取最近几分钟内的码，核对发件方是 Google 或 TypeSafe。
+   - 遇到 Google 密码、passkey、手机提示确认、图片验证码：把浏览器交给辉哥亲手完成，不代填密码、不取 cookie/token。
    - 登录后找用量 / 账单 / 额度相关页面，**照页面实际显示抄录**：已用量、剩余额度或余额、套餐、计费周期、到期或重置时间。页面上没有的项写「页面未显示」，不要推算。
    - 截一张用量页截图作为凭证（截图里不能出现 Key 明文）。
 3. **本地辅助（可选）**：若各 Agent 有记录每次调用的 `usage` token 流水，可附上本周累计；没有流水就不要估算。
