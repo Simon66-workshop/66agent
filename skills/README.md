@@ -38,7 +38,7 @@
 - hf-cloud-lab.md（编程Bot 把 HF 模型拉到云电脑本地测；默认不下 8GB / 14B+；Read token；不走付费 Inference）
 - locate-machine-probe.md（多机并行指纹锁定 Pro/Air/Mini；侧栏 machineId 不可信）
 - wechat-mac-reply.md（Mac 微信代回；探针+标题双检+剪贴板；默认辉哥先点开会话）
-- macbook-pro-probe.md（Pro 单机入口；优先 locate-machine-probe）
+- macbook-probe.md（Pro 单机入口；优先 locate-machine-probe）
 - airbook-probe.md（Air 单机入口；优先 locate-machine-probe）
 - mini-butler-probe.md（Mac mini 管家探针与职责边界）
 - boss-editor-chat.md（剪辑/新媒体岗代聊：AE运镜追问、口播IP+展示号、抖音66_Workshop）
@@ -55,3 +55,4 @@
 
 - write-test-audit-现场测.md（Mini 现场部署/测试/盯 inbox：以产品仓 write-test-audit 为准，只做测，不自签闭合）
 - 66-radar-cloud-collector.md（抖音雷达云端：搜索筛选采集→Drive材料→最后receipt；不含 Mac wait_receipt/ack_receipt；不装 Codex MCP；不自选 thread/模型/cwd/shell）
+- 办公助理_Jev用量与额度查询.md（办公助理：查 Jev/TypeSafe 用量与额度（API 无用量接口，走 console.typesafe.ai Google 登录；Key 只读环境变量））
