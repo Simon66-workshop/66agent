@@ -53,3 +53,4 @@
 - Claude网络检测.md（Claude 只走指定线路；失效即停、不直连、不换节点；中转两端都查）
 
 - write-test-audit-现场测.md（Mini 现场部署/测试/盯 inbox：以产品仓 write-test-audit 为准，只做测，不自签闭合）
+- 66-radar-cloud-collector.md（抖音雷达云端：搜索筛选采集→Drive材料→最后receipt；不含 Mac wait_receipt/ack_receipt；不装 Codex MCP；不自选 thread/模型/cwd/shell）
