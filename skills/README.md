@@ -10,6 +10,7 @@
 - 演示 ≤10 分钟才固化；没演示过的不编。见 `教一遍就固化.md`
 
 ## 当前技能列表
+- Notion商业版日更交接.md（Business 工作区：热话题报告 Verification、选题库候选、表/看板视图、SQL 汇总；账号 ID 放 routine/记忆）
 - X-Radar-5核心.md（现行 5 槽；汽车不进 Radar）
 - X-Radar-7核心.md（已废弃，改用 X-Radar-5核心.md）
 - Radar-Scout.md
