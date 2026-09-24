@@ -165,6 +165,7 @@ rules or permanent model limitations. Keep API credentials server-side in web ap
 1. 输出里必须写明：**哪些步骤用了 Jev**（未用则写「本任务未调用 Jev」）。
 2. API key **只**从环境变量 `TYPESAFE_API_KEY` 读取；**禁止**写入公开仓库、工作记忆、规范文件或聊天。
 3. 政策出处与落地参考：https://github.com/Simon66-workshop/66agent/commit/20ba6c1bb93786770284a582150d94143b9849f4
+4. X 侧热帖固定五题走 `skills/jev-x-layer3.md`，不要把该表套到抖音，也不要用于传输层判断。
 
 ## Grok Bot / multi-agent notes
 

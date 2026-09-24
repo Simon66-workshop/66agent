@@ -17,6 +17,7 @@
 - Evidence-Judge.md
 - Content-Converter.md
 - Self-Optimizer.md
+- jev-x-layer3.md（仅 X：规则过滤后、详情前的 Jev 五题；失败走 HOST；抖音不套用）
 - 辉哥业务背景.md
 - 小红书种草与变现方法论.md
 - 研究机会评估标准.md
