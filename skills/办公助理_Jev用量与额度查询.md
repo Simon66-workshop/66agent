@@ -29,9 +29,16 @@ description: use this when 辉哥问 Jev / TypeSafe 用了多少、还剩多少�
    - 用浏览器打开 `https://console.typesafe.ai/`，选 Google 登录，账号选 `simonwu.chi@gmail.com`。
    - **需要邮件验证码时**：辉哥已授权直接用 Gmail 连接器（默认箱 `user-Gmail`，即 simonwu.chi@gmail.com）搜最新的 Google / TypeSafe 验证码邮件，取码填入完成登录。只取最近几分钟内的码，核对发件方是 Google 或 TypeSafe。
    - 遇到 Google 密码、passkey、手机提示确认、图片验证码：把浏览器交给辉哥亲手完成，不代填密码、不取 cookie/token。
-   - 登录后找用量 / 账单 / 额度相关页面，**照页面实际显示抄录**：已用量、剩余额度或余额、套餐、计费周期、到期或重置时间。页面上没有的项写「页面未显示」，不要推算。
+   - 登录后直接打开两个页面（2026-09-24 实测）：
+     - 用量 `https://console.typesafe.ai/usage`：Spend、Tokens、Requests，筛选默认 All traffic · Last 7 days · Hourly。
+     - 余额 `https://console.typesafe.ai/settings/billing`：Credit Balance、Credits 表（Granted / Type / Amount / Remaining / Expires UTC）、Auto-recharge、Purchase History。
+   - **照页面实际显示抄录**：已用量、剩余额度或余额、赠额类型与过期时间、计价。页面上没有的项（目前套餐名、token 上限、限流规则都没显示）写「页面未显示」，不要推算。页面注明 Stats may be delayed，余额可能滞后。
    - 截一张用量页截图作为凭证（截图里不能出现 Key 明文）。
 3. **本地辅助（可选）**：若各 Agent 有记录每次调用的 `usage` token 流水，可附上本周累计；没有流水就不要估算。
+
+## 历史基线（用于对比消耗）
+
+- 2026-09-24：余额 $5.00（Monthly credit，9/20 发放，10/20 UTC 过期）；近 7 天 148,632 tokens、151 次请求、$0.0055；计价 $0.042/百万输入 token，输出免费；Auto-recharge Off；无购买记录。
 
 ## 回报格式（给辉哥）
 
