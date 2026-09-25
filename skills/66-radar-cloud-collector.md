@@ -12,6 +12,8 @@ description: >-
 
 配套只读：`douyin-daily-opportunity-radar`、`box-observe-download-douyin`、`download-observed-douyin-video`、`typesafe-ai`（Jev），以及任务指定的 66Workshop 雷达 Skill / decision-policy（以任务给出的固定 SHA 为准）。
 
+小红书选题不执行本 skill。预算上限、规则先于 Jev、Jev 不进回执、失败写 BLOCKED/FAILED 这些纪律由 `XHS-Topic-Pipeline.md` 另写一套；本文件仍是抖音云端采集。
+
 ---
 
 ## 1. 任务身份

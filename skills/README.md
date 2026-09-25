@@ -7,18 +7,28 @@
 - 新验证有效的方法必须蒸馏成技能文件
 - 文件保持简洁、可执行、带示例
 - **新建或更新 skill 必须同时写入 GitHub 本目录和本地** `/Volumes/2T扩展盘/Agent文件/skills`，不必等辉哥再说「更新」
+- 云端 Agent 够不着这块盘时：只提交 GitHub，并在 PR 写明本地镜像待辉哥本机同步。不要虚构「已写入本地盘」
 - 演示 ≤10 分钟才固化；没演示过的不编。见 `教一遍就固化.md`
 
 ## 当前技能列表
 - Notion商业版日更交接.md（Business 工作区：热话题报告 Verification、选题库候选、表/看板视图、SQL 汇总；账号 ID 放 routine/记忆）
 - X-Radar-5核心.md（现行 5 槽；汽车不进 Radar）
 - X-Radar-7核心.md（已废弃，改用 X-Radar-5核心.md）
-- Radar-Scout.md
-- Evidence-Judge.md
-- Content-Converter.md
-- Self-Optimizer.md
+- Radar-Scout.md（X 发现层；小红书选题不走这里，走 XHS-Topic-Pipeline.md）
+- Evidence-Judge.md（X）
+- Content-Converter.md（X；不自动发布）
+- Self-Optimizer.md（X Ledger；v0.1 不拿来改小红书槽）
 - 辉哥业务背景.md
-- 小红书种草与变现方法论.md
+- 小红书种草与变现方法论.md（结构与变现；选题执行不替代下面的 XHS 流水线）
+- 小红书数据源清单.md（官方/半官方优先；保留，不并入流水线）
+- 小红书赛道数据源清单.md（较新补充，含聚光；与上一份并存）
+- XHS-Topic-Pipeline.md（小红书选题 v0.1 总流程：发现→规则→Jev→打分→拆解→最多 3 张卡；不发布、不建 routine）
+- XHS-Radar-Slots.md（66Workshop 默认 5 槽：刹车 / 低趴 / 验收 / AIGC 方法 / 实体经营；汽车题走小红书，不抄 X「汽车不进 Radar」）
+- XHS-Radar-Scout.md（只出信号卡，不打分）
+- XHS-Jev-Filter.md（规则之后的五题过滤；不算 X 热度 H；无 key 写 JEV_NOT_RUN）
+- XHS-Evidence-Judge.md（P0/高P1/P1/WATCH/DISCARD；只放 P0 与高 P1 去拆解）
+- XHS-Deconstruct.md（L0–L3；无播放回执不得写已看完）
+- XHS-Content-Converter.md（≤3 张提纲，封面标题 ≤20 字；发布留给人）
 - 研究机会评估标准.md
 - 去AI味与人类感检查清单.md
 - 本地AI-Agent部署与维护SOP.md
@@ -54,5 +64,5 @@
 - Claude网络检测.md（Claude 只走指定线路；失效即停、不直连、不换节点；中转两端都查）
 
 - write-test-audit-现场测.md（Mini 现场部署/测试/盯 inbox：以产品仓 write-test-audit 为准，只做测，不自签闭合）
-- 66-radar-cloud-collector.md（抖音雷达云端：搜索筛选采集→Drive材料→最后receipt；不含 Mac wait_receipt/ack_receipt；不装 Codex MCP；不自选 thread/模型/cwd/shell）
+- 66-radar-cloud-collector.md（抖音雷达云端：搜索筛选采集→Drive材料→最后receipt；不含 Mac wait_receipt/ack_receipt；不装 Codex MCP；不自选 thread/模型/cwd/shell。小红书选题不走本 skill，只借用预算/Jev/BLOCKED 纪律，见 XHS-Topic-Pipeline.md）
 - 办公助理_Jev用量与额度查询.md（办公助理：查 Jev/TypeSafe 用量与额度（API 无用量接口，走 console.typesafe.ai Google 登录；Key 只读环境变量））
