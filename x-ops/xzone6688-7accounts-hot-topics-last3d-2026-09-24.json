@@ -1,0 +1,726 @@
+{
+  "account_for": "xzone6688",
+  "generated_at_utc": "2026-09-24T14:36:00Z",
+  "evidence_priority": "本文件热度只采用登录态样本 JSON 的 views/likes/replies。样本里没有的字段写未找到。公开网页不覆盖这些数字。",
+  "window": {
+    "label": "2026-09-21..2026-09-24",
+    "as_of": "2026-09-24",
+    "note": "样本 partial，7 个号共 21 帖。没出现在样本里的帖，热度未找到。"
+  },
+  "coverage": [
+    {
+      "handle": "@gengdaJ",
+      "coverage": "partial",
+      "posts_in_sample": 3
+    },
+    {
+      "handle": "@Saccc_c",
+      "coverage": "partial",
+      "posts_in_sample": 3
+    },
+    {
+      "handle": "@NFTCPS",
+      "coverage": "partial",
+      "posts_in_sample": 4
+    },
+    {
+      "handle": "@jiroucaigou",
+      "coverage": "partial",
+      "posts_in_sample": 1
+    },
+    {
+      "handle": "@xiangxiang103",
+      "coverage": "partial",
+      "posts_in_sample": 4
+    },
+    {
+      "handle": "@Fred834567",
+      "coverage": "partial",
+      "posts_in_sample": 4
+    },
+    {
+      "handle": "@AI_DVD6",
+      "coverage": "partial",
+      "posts_in_sample": 2
+    }
+  ],
+  "topics": [
+    {
+      "id": "noise-lifestyle",
+      "name": "高浏览生活噪声：戒断故事和身份标签",
+      "accounts": [
+        "Fred834567"
+      ],
+      "weight": "downweight",
+      "representative_url": "https://x.com/Fred834567/status/2102644632366543031",
+      "visible_heat": {
+        "views": 325137,
+        "likes": 1832,
+        "replies": 80,
+        "reposts": 162,
+        "bookmarks": 1737
+      },
+      "summary": "样本里浏览最高。同号还有 00 后有钱人标签（30767 浏览、51 赞、58 回复）和一篇「大环境更卷」转文（2788 浏览、7 赞、14 回复）。不服务 66 的实操选题。"
+    },
+    {
+      "id": "qwen-image-unlock",
+      "name": "Qwen-Image 无限制版：提示词改写器这道锁，加一张显卡表",
+      "accounts": [
+        "xiangxiang103"
+      ],
+      "weight": "keep-structure-drop-uncensor-angle",
+      "representative_url": "https://x.com/xiangxiang103/status/2102704760122146992",
+      "visible_heat": {
+        "views": 158061,
+        "likes": 1596,
+        "replies": 38,
+        "reposts": 134,
+        "bookmarks": 3115
+      },
+      "also": [
+        {
+          "url": "https://x.com/xiangxiang103/status/2103070327257637296",
+          "views": 15614,
+          "likes": 151,
+          "replies": 6,
+          "reposts": 16,
+          "bookmarks": 229
+        }
+      ],
+      "summary": "样本内实操热度最高，目前只出现在雨哥。代表帖说官方流程里还有提示词改写器，原版 100 条请求拒绝 98 条。同日另一条按 8G 显卡给 UC-Q4_K_M（4.6GB）和 Heretic 编码器。可迁移的是「先指出只做了一半，再给设备表」。66 不把去审查当选题。"
+    },
+    {
+      "id": "tool-access-apple-id",
+      "name": "先进工具怎么真正打开：美区 Apple ID，而不是再装一套框架",
+      "accounts": [
+        "gengdaJ"
+      ],
+      "weight": "keep",
+      "representative_url": "https://x.com/gengdaJ/status/2102409589782397142",
+      "visible_heat": {
+        "views": 109585,
+        "likes": 208,
+        "replies": 141,
+        "reposts": 26,
+        "bookmarks": 176
+      },
+      "also": [
+        {
+          "url": "https://x.com/gengdaJ/status/2102009014603440193",
+          "views": 25688,
+          "likes": 24,
+          "replies": 1,
+          "reposts": 2,
+          "bookmarks": 37,
+          "note": "用这张卡开 Claude，正文很短"
+        }
+      ],
+      "summary": "逸尘用换 iPhone 写工具可达性：ChatGPT、Claude、Chrome、Gemini、Gmail、Grok 走美区 Apple ID。回复 141，高于他同窗口的 Sol 降价帖。开卡那条浏览 25688，回复只有 1。"
+    },
+    {
+      "id": "gpt6-sol-price-codex",
+      "name": "GPT-6 Sol 降价，接到 Codex",
+      "accounts": [
+        "gengdaJ",
+        "Saccc_c"
+      ],
+      "weight": "keep",
+      "representative_url": "https://x.com/gengdaJ/status/2102559119672852951",
+      "visible_heat": {
+        "views": 66771,
+        "likes": 90,
+        "replies": 101,
+        "reposts": 8,
+        "bookmarks": 41
+      },
+      "also": [
+        {
+          "url": "https://x.com/Saccc_c/status/2102627123836137820",
+          "views": 26675,
+          "likes": 236,
+          "replies": 37,
+          "reposts": 49,
+          "bookmarks": 257
+        }
+      ],
+      "summary": "跨了逸尘和 Sac。逸尘比价格：Sol/Luna 比 GPT 5.6 同系列便宜一半，比 Astra 便宜四倍，Luna 比 DeepSeek 还便宜。赞只有 90，回复 101。Sac 把 Sol 放进 3D 游戏配方：Astra 规划加多个 Sol subagent，并写明人物和大场景纯代码生成又吃 token。Sac 这条赞 236、收藏 257，高于逸尘的价格帖。"
+    },
+    {
+      "id": "numbered-workflow",
+      "name": "带数字的流程：筛潜客，和免费科研仓库",
+      "accounts": [
+        "AI_DVD6",
+        "Saccc_c"
+      ],
+      "weight": "keep",
+      "representative_url": "https://x.com/AI_DVD6/status/2102763860818031043",
+      "visible_heat": {
+        "views": 37225,
+        "likes": 349,
+        "replies": 20,
+        "reposts": 87,
+        "bookmarks": 378
+      },
+      "also": [
+        {
+          "url": "https://x.com/Saccc_c/status/2102946503400763708",
+          "views": 31466,
+          "likes": 145,
+          "replies": 46,
+          "reposts": 57,
+          "bookmarks": 126
+        }
+      ],
+      "summary": "大卫写 Jev 用 40 秒、0.09 美元筛 700 个潜客，并自动打分。收藏 378。Sac 推免费仓库 ScienceBuddy，用来搜文献和做数据分析，浏览 31466、收藏 126。两帖都是「一个工具替掉一段重复劳动」。"
+    },
+    {
+      "id": "crypto-event-noise",
+      "name": "会务和链上监控，降权",
+      "accounts": [
+        "jiroucaigou",
+        "NFTCPS"
+      ],
+      "weight": "downweight",
+      "representative_url": "https://x.com/NFTCPS/status/2103021426676773242",
+      "visible_heat": {
+        "views": 5462,
+        "likes": 29,
+        "replies": 34,
+        "reposts": 5,
+        "bookmarks": 22
+      },
+      "also": [
+        {
+          "url": "https://x.com/jiroucaigou/status/2102361634002092542",
+          "views": 2841,
+          "likes": 50,
+          "replies": 51,
+          "reposts": 1,
+          "bookmarks": "未找到"
+        },
+        {
+          "url": "https://x.com/NFTCPS/status/2103025943950602563",
+          "views": 4087,
+          "likes": 23,
+          "replies": 29,
+          "reposts": 2,
+          "bookmarks": 16
+        },
+        {
+          "url": "https://x.com/NFTCPS/status/2103018102682206268",
+          "views": 2281,
+          "likes": 7,
+          "replies": 24,
+          "reposts": 1,
+          "bookmarks": 4
+        }
+      ],
+      "summary": "菜狗这条是 OKX 会：吃喝、要微信、顺走周边，收藏未找到。鸟哥三条是土狗监控、KOL 清单、热门标签站。浏览都在几千，不构成 66 的热选题。"
+    },
+    {
+      "id": "free-resource-list",
+      "name": "免费资源清单（儿童教育，不是空投）",
+      "accounts": [
+        "NFTCPS"
+      ],
+      "weight": "watch-listicle",
+      "representative_url": "https://x.com/NFTCPS/status/2102947494766481726",
+      "visible_heat": {
+        "views": 11789,
+        "likes": 190,
+        "replies": 18,
+        "reposts": 66,
+        "bookmarks": 288
+      },
+      "summary": "鸟哥样本里互动最好的一条：50 个免费儿童资源，190 赞、288 收藏，高于他同批的链上帖。结构是清单。内容和 66 的 AI 编程落地无关，只借「替掉信息差」这句，不借选题。"
+    },
+    {
+      "id": "gray-market-codes",
+      "name": "闲鱼暗号和代激活，降权",
+      "accounts": [
+        "Saccc_c",
+        "xiangxiang103"
+      ],
+      "weight": "downweight",
+      "representative_url": "https://x.com/Saccc_c/status/2102672062691373456",
+      "visible_heat": {
+        "views": 10417,
+        "likes": 22,
+        "replies": 22,
+        "reposts": 0,
+        "bookmarks": 4
+      },
+      "also": [
+        {
+          "url": "https://x.com/xiangxiang103/status/2103050778684317917",
+          "views": 644,
+          "likes": 4,
+          "replies": 3,
+          "reposts": 0,
+          "bookmarks": 1
+        }
+      ],
+      "summary": "Sac 笑闲鱼 GPT 暗号，收藏 4。雨哥聊闲鱼 Muse 代激活 29.9，浏览 644、赞 4。有浏览差，没有收藏。66 不写代充和暗号。"
+    }
+  ],
+  "posts": [
+    {
+      "id": "2102644632366543031",
+      "url": "https://x.com/Fred834567/status/2102644632366543031",
+      "author": "Fred834567",
+      "age_as_captured": "Sep 23",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 325137,
+      "likes": 1832,
+      "replies": 80,
+      "reposts": 162,
+      "bookmarks": 1737,
+      "topic_id": "noise-lifestyle",
+      "weight": "downweight",
+      "text": "兄弟们，挖到个离谱的。有个外国老哥为了戒色，直接把自己收藏的 1000 多个网站全拉黑，域名塞进 hosts，连 CDN 都没放过。本来是私人戒断工具，不知谁顺手发上了 GitHub，评论区直接排队：谢了，码住。GitHub： github.com/wpzzz/blocked-",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102704760122146992",
+      "url": "https://x.com/xiangxiang103/status/2102704760122146992",
+      "author": "xiangxiang103",
+      "age_as_captured": "Sep 23",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 158061,
+      "likes": 1596,
+      "replies": 38,
+      "reposts": 134,
+      "bookmarks": 3115,
+      "topic_id": "qwen-image-unlock",
+      "weight": "keep-structure-drop-uncensor-angle",
+      "text": "你下的 Qwen-Image 无限制版，可能只解锁了一半。官方流程里还藏着一道锁：提示词改写器。如果你的工作流接了它，你的一句话会先被它扩写成详细的英文提示词，再交给生图模型。它自己也会拒绝，原版 100 条请求里拒绝 98 条。上条的生图模型和文本编码器去得再干净，这一环照样会卡住你。",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102409589782397142",
+      "url": "https://x.com/gengdaJ/status/2102409589782397142",
+      "author": "gengdaJ",
+      "age_as_captured": "Sep 22",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 109585,
+      "likes": 208,
+      "replies": 141,
+      "reposts": 26,
+      "bookmarks": 176,
+      "topic_id": "tool-access-apple-id",
+      "weight": "keep",
+      "text": "三年华为土农民用上iPhone 18 Pro Max有感： 1. 所有先进工具（ChatGPT、Claude、Chrome、Gemini、Gmail...)是不需要花费大力气搞谷歌框架、下载出境易等工具的，直接一个免费注册的美区Apple ID登录Apple Store搞定。而在华为不能下载的Grok，也是可以一秒下载的。。。 2.",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102559119672852951",
+      "url": "https://x.com/gengdaJ/status/2102559119672852951",
+      "author": "gengdaJ",
+      "age_as_captured": "Sep 22",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 66771,
+      "likes": 90,
+      "replies": 101,
+      "reposts": 8,
+      "bookmarks": 41,
+      "topic_id": "gpt6-sol-price-codex",
+      "weight": "keep",
+      "text": "WTF？？？GPT-6 Sol和GPT-6 Luna正式上线，简直是价格屠夫，Luna直接比DeepSeek还便宜，咱老百姓也能爽玩Codex了！ GPT-6 Sol和GPT-6Luna比GPT 5.6同系列模型便宜一半，也就是比GPT-6Astra要便宜四倍！！！ 等于说，我现在就只用GPT-6 Sol模型，我只要有一个GPT",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102763860818031043",
+      "url": "https://x.com/AI_DVD6/status/2102763860818031043",
+      "author": "AI_DVD6",
+      "age_as_captured": "23 hours ago",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 37225,
+      "likes": 349,
+      "replies": 20,
+      "reposts": 87,
+      "bookmarks": 378,
+      "topic_id": "numbered-workflow",
+      "weight": "keep",
+      "text": "所有销售人员都在颤抖！Jev用40 秒，成本0.09 美元，直接把 700 个潜在客户都筛了一遍！大家赶紧学起来，别等你的老板和同事都了解这些之后你再拍大腿！看下面这案例，他一次把 700 个高质量潜客 + 多套销售文案扔给Jev 👇 结果： → 每个潜客值不值得跟——自动打分 →",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102946503400763708",
+      "url": "https://x.com/Saccc_c/status/2102946503400763708",
+      "author": "Saccc_c",
+      "age_as_captured": "11 hours ago",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 31466,
+      "likes": 145,
+      "replies": 46,
+      "reposts": 57,
+      "bookmarks": 126,
+      "topic_id": "numbered-workflow",
+      "weight": "keep",
+      "text": "这绝对是学生党必备的GitHub开源仓库，能一站式帮你搞定搜文献、数据分析等写论文中最麻烦的步骤，而且完全免费！学生党最头疼的就是写论文和做课题研究，查文献、跑代码，一搞就是两三天，特别是有些关键数据还需要付费才可以获取 而最近我在GitHub上发现了一个免费的AI科研项目，叫ScienceBuddy",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102606185056915911",
+      "url": "https://x.com/Fred834567/status/2102606185056915911",
+      "author": "Fred834567",
+      "age_as_captured": "Sep 22",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 30767,
+      "likes": 51,
+      "replies": 58,
+      "reposts": 6,
+      "bookmarks": 42,
+      "topic_id": "noise-lifestyle",
+      "weight": "downweight",
+      "text": "我见过的00后有钱人，清一色的是：网红，灰产，币圈，二代，擦边，没有例外。但你要知道，这些标签是结果，不是路径。",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102627123836137820",
+      "url": "https://x.com/Saccc_c/status/2102627123836137820",
+      "author": "Saccc_c",
+      "age_as_captured": "Sep 23",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 26675,
+      "likes": 236,
+      "replies": 37,
+      "reposts": 49,
+      "bookmarks": 257,
+      "topic_id": "gpt6-sol-price-codex",
+      "weight": "keep",
+      "text": "GPT 6-Sol 终于发布了，我总算找到了在 Codex 里做 3D 游戏的最佳工作流！ Sol 真是又便宜又好用啊，尝试用「Astra规划方案+多个Sol的subagent执行」的方式去制作游戏，效果非常顶。唯一的不足就是在人物建模和大型场景资产方面，这样纯代码生成，token消耗很大，效果还不一定理想 最近发现的 Combos",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102009014603440193",
+      "url": "https://x.com/gengdaJ/status/2102009014603440193",
+      "author": "gengdaJ",
+      "age_as_captured": "Sep 21",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 25688,
+      "likes": 24,
+      "replies": 1,
+      "reposts": 2,
+      "bookmarks": 37,
+      "topic_id": "tool-access-apple-id",
+      "weight": "keep",
+      "text": "接下来我打算用这张卡开Claude，羡慕温总已经用这张卡稳定用上了 🥹",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2103070327257637296",
+      "url": "https://x.com/xiangxiang103/status/2103070327257637296",
+      "author": "xiangxiang103",
+      "age_as_captured": "3 hours ago",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 15614,
+      "likes": 151,
+      "replies": 6,
+      "reposts": 16,
+      "bookmarks": 229,
+      "topic_id": "qwen-image-unlock",
+      "weight": "keep-structure-drop-uncensor-angle",
+      "text": "你的显卡能跑哪个 Qwen-Image 无限制版？我把 Hugging Face 上下载量最高的几套翻了一遍，按设备整理成了一张图 👇 先说结论：无限制版不是一个文件，是三个。生图模型、文本编码器、提示词改写器都要换，才算完整解锁。 8G 显卡：生图模型下 UC-Q4_K_M（4.6GB）放显卡，文本编码器下 Heretic",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102947494766481726",
+      "url": "https://x.com/NFTCPS/status/2102947494766481726",
+      "author": "NFTCPS",
+      "age_as_captured": "11 hours ago",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 11789,
+      "likes": 190,
+      "replies": 18,
+      "reposts": 66,
+      "bookmarks": 288,
+      "topic_id": "free-resource-list",
+      "weight": "watch-listicle",
+      "text": "别再交那些天价的少儿编程课、思维课、艺术课了。全世界最好的儿童教育资源，其实压根不要钱，只是没人帮你宣传，你花的那些冤枉钱，很多都是在为信息差买单。下面这50个免费资源，从编程、科学、数学到阅读、语言、艺术、下棋，基本能覆盖孩子成长里能想到的所有方向。",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102672062691373456",
+      "url": "https://x.com/Saccc_c/status/2102672062691373456",
+      "author": "Saccc_c",
+      "age_as_captured": "Sep 23",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 10417,
+      "likes": 22,
+      "replies": 22,
+      "reposts": 0,
+      "bookmarks": 4,
+      "topic_id": "gray-market-codes",
+      "weight": "downweight",
+      "text": "GPT 6 Sol更新了，看了眼闲鱼，现在GPT暗号也进化到这个地步了吗 😂",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2103021426676773242",
+      "url": "https://x.com/NFTCPS/status/2103021426676773242",
+      "author": "NFTCPS",
+      "age_as_captured": "6 hours ago",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 5462,
+      "likes": 29,
+      "replies": 34,
+      "reposts": 5,
+      "bookmarks": 22,
+      "topic_id": "crypto-event-noise",
+      "weight": "downweight",
+      "text": "如果你不会推特X监控，我劝你就不要再打土狗了！ CZ一条推文，不到1分钟，链上就冒出一枚百倍Meme。比如大表哥cz_binance 之前引用了PANews的一条推文：“选择大于努力”。然后呢？不到1分钟，$选择大于努力 就出来了，直接拉了100倍。",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2103025943950602563",
+      "url": "https://x.com/NFTCPS/status/2103025943950602563",
+      "author": "NFTCPS",
+      "age_as_captured": "6 hours ago",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 4087,
+      "likes": 23,
+      "replies": 29,
+      "reposts": 2,
+      "bookmarks": 16,
+      "topic_id": "crypto-event-noise",
+      "weight": "downweight",
+      "text": "做自媒体/OPC，不知道写什么？看这个网站，把每个平台的热门标签给你标注出来，每天的热门话题，你去写这些内容，大部分可以上热门: betteropc.com/self-media/tra",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102732351369621739",
+      "url": "https://x.com/xiangxiang103/status/2102732351369621739",
+      "author": "xiangxiang103",
+      "age_as_captured": "Sep 23",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 3715,
+      "likes": 13,
+      "replies": 3,
+      "reposts": 2,
+      "bookmarks": 3,
+      "topic_id": "one-prompt-playable-3d",
+      "weight": "watch-low-heat",
+      "text": "Claude Opus 5.5 就拿到这么一句提示词，然后交出了一个能玩的 3D QQ飞车：漂移集气、小喷、双喷、氮气、道具赛，十一城、爱琴海、法老金字塔、雪地大冒险四张图。没有一张图片，没有一个音频文件，人工没改过一行代码。连 BGM 都是代码现场合成的。",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2102361634002092542",
+      "url": "https://x.com/jiroucaigou/status/2102361634002092542",
+      "author": "jiroucaigou",
+      "age_as_captured": "Sep 22",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 2841,
+      "likes": 50,
+      "replies": 51,
+      "reposts": 1,
+      "bookmarks": "未找到",
+      "topic_id": "crypto-event-noise",
+      "weight": "downweight",
+      "text": "感谢大美女 @misaENFP 的邀请，也是跑上会了，很久没有见过OKX这么重磅的宣传了，可以期待一手OKB爆拉 参会我只办这几件事 遇到好吃的我就吃 遇到好喝的我就喝 看到采访我就说话 看到美女就要微信 看到拍照我就比 ✌️ 看到周边我就顺走",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2103008268616606093",
+      "url": "https://x.com/Fred834567/status/2103008268616606093",
+      "author": "Fred834567",
+      "age_as_captured": "7 hours ago",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 2788,
+      "likes": 7,
+      "replies": 14,
+      "reposts": 1,
+      "bookmarks": 3,
+      "topic_id": "noise-lifestyle",
+      "weight": "downweight",
+      "text": "转篇很火的短文：这几年听到最多的声音就是“大环境不好，现在好卷啊，赚钱太难了”。很遗憾的告诉你，这只是开始，接下来会更难。原因很简单，因为普通人之间的差距正在逐渐的变小，注意，我说得是普通人。变有钱，从来就不是一个靠努力就能实现的事情，一靠命，二靠运，三靠胆子。",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2103018102682206268",
+      "url": "https://x.com/NFTCPS/status/2103018102682206268",
+      "author": "NFTCPS",
+      "age_as_captured": "7 hours ago",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 2281,
+      "likes": 7,
+      "replies": 24,
+      "reposts": 1,
+      "bookmarks": 4,
+      "topic_id": "crypto-event-noise",
+      "weight": "downweight",
+      "text": "《如果你是一名Crypto/AI KOL，一定要关注下面的账号！》 获取一手信息第一时间用自己的语言发出来，这就是流量密码！最好是毫秒级监控，第一时间掌握消息，可以用GMGN的社媒监控功能，免费的： gmgn.ai/r/C7KoyPop 链上和加密 @ZachXBT — 链上调查、黑客追踪 @lookonchain — 巨鲸和聪明钱异动",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2103073923965600087",
+      "url": "https://x.com/Fred834567/status/2103073923965600087",
+      "author": "Fred834567",
+      "age_as_captured": "3 hours ago",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 1752,
+      "likes": 16,
+      "replies": 23,
+      "reposts": 18,
+      "bookmarks": 5,
+      "topic_id": "promo-pexo",
+      "weight": "downweight",
+      "text": "设计师接到品牌动效需求，最费劲的往往是把“高级一点”翻译成具体画面。现在可以直接跟 Pexo @Pexoai_offical 聊。它是一款 AI 视频创作工具。告诉它你的业务、核心卖点和大致风格，它会帮你构思脚本、安排镜头、制作视频。看完初版，再继续聊、接着改。",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2103050778684317917",
+      "url": "https://x.com/xiangxiang103/status/2103050778684317917",
+      "author": "xiangxiang103",
+      "age_as_captured": "4 hours ago",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 644,
+      "likes": 4,
+      "replies": 3,
+      "reposts": 0,
+      "bookmarks": 1,
+      "topic_id": "gray-market-codes",
+      "weight": "downweight",
+      "text": "卧槽，阿蔺你怎么把这种赚钱的路子直接放出来了？闲鱼上 Muse 代激活 29.9 一单，几家加起来 几百人想要。成本就是一个 Gemini Pro 会员，再加十几分钟。这套流程要是包装一下丢到小红书，标题写「国内也能用上 Meta 最火的 AI Agent」，卖 299 都有人排队买。",
+      "text_note": "样本正文被截断，未补写后文"
+    },
+    {
+      "id": "2103064961362924000",
+      "url": "https://x.com/AI_DVD6/status/2103064961362924000",
+      "author": "AI_DVD6",
+      "age_as_captured": "3 hours ago",
+      "in_window": true,
+      "coverage": "partial",
+      "source": "logged_in_browser_sample",
+      "source_file": "xzone6688-7accounts-last3d.json",
+      "as_of": "2026-09-24",
+      "views": 164,
+      "likes": 0,
+      "replies": 0,
+      "reposts": 0,
+      "bookmarks": "未找到",
+      "topic_id": "one-prompt-playable-3d",
+      "weight": "watch-low-heat",
+      "text": "“我对Opus5.5说，让它制作广告里的那个游戏，结果一下就做出来了。” 卧槽！这个广告中的游戏居然被人用Opus5.5做出来！点击下面链接可以直接玩 👇 claude.ai/artifact/R6cDT x.com/ai_dvd6/status",
+      "text_note": "样本正文被截断，未补写后文"
+    }
+  ],
+  "insights": [
+    {
+      "id": "sol-plus-limit",
+      "for": "xzone6688",
+      "kind": "选题",
+      "action": "把逸尘的价格对照和 Sac 的短板合成一条：GPT-6 Sol 接到 Codex 之后，哪一步变便宜，哪一步仍然吃 token。价格用帖内原话并注明出处。Sac 这条收藏 257，高于逸尘价格帖的 41。"
+    },
+    {
+      "id": "half-done-then-table",
+      "for": "xzone6688",
+      "kind": "内容结构",
+      "action": "学雨哥的两截，不学去审查。先写「你以为配好了，其实还有一道锁」，再给一张自己的设备或模型档表。他的锁帖是 158061 浏览、1596 赞、3115 收藏；显卡表是 15614 浏览、151 赞、229 收藏。"
+    },
+    {
+      "id": "one-number-pipeline",
+      "for": "xzone6688",
+      "kind": "选题",
+      "action": "大卫这条能搬的是数字位：40 秒、0.09 美元、700 个潜客。66 换成自己的线索或改装询盘，数字必须自己跑出来。样本热度是 37225 浏览、349 赞、20 回复、378 收藏。"
+    },
+    {
+      "id": "tool-access",
+      "for": "xzone6688",
+      "kind": "选题",
+      "action": "逸尘换机帖回复最高（141）。可写成「一个美区 Apple ID 打开了哪些工具、哪一个仍然开不了」。不要扩写成出境教程。开卡帖浏览 25688 但回复只有 1，这种半句不单独发。"
+    },
+    {
+      "id": "downweight",
+      "for": "xzone6688",
+      "kind": "避坑",
+      "action": "降权：Fred 的戒断故事和身份标签（样本浏览最高，和业务无关）；鸟哥的土狗监控、KOL 清单、热门标签站；菜狗的 OKX 会务；Sac 的闲鱼暗号；雨哥的闲鱼代激活；Fred 的 Pexo 帖（1752 浏览、16 赞、23 回复）。"
+    },
+    {
+      "id": "gap",
+      "for": "xzone6688",
+      "kind": "证据缺口",
+      "action": "7 个号都是 partial，一共 21 帖。样本里没有的帖，热度未找到。菜狗那条和大卫的 Opus 游戏帖，收藏字段是未找到。正文都是截断，没有补写。"
+    }
+  ]
+}
