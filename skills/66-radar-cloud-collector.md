@@ -68,6 +68,8 @@ description: >-
 
 （以任务 `decision-policy` / 已批准语义问题清单为准；无合法适配器则标 `JEV_NOT_RUN`，不粘贴密钥、不虚报。）
 
+抖音**不要**套 `skills/jev-x-layer3.md` 的 Q1/Q2/Q3/Q4/Q8。那张表只服务 X。
+
 产出须标明：哪些步用了 Jev，哪些步用了本模型。走 `typesafe-ai` / `TYPESAFE_API_KEY`。
 
 ### 2.3 Jev 不应该出现在（回执传输层 / 程序态）

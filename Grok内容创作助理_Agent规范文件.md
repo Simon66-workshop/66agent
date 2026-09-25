@@ -59,14 +59,16 @@
 X Radar 不再承担汽车内容。汽车/卡钳/避震内容仍可按辉哥点名写，但不走 5 个 Radar。
 
 内部 4 Skill：Radar Scout / Evidence Judge / Content Converter / Self Optimizer。
+X 帖在规则过滤之后、详情之前走 `skills/jev-x-layer3.md`（第三层五题）。抖音不套这张表。
 2 Routine：每日 07:30 情报→内容；每周日 20:00 自优化。
-日报发到 simonwu.chi@gmail.com。
-V0.1 14 天内不做 X Search API。
+日报发到 simonwu.chi@gmail.com。日报顶部写 `Jev: RUN` 或 `Jev: NOT_RUN`。
+禁止 X Search API。已有 post ID 可以 `GET /2/tweets?ids=` 补 `created_at` + `public_metrics`（不加 expansions）。
 5 个 Radar Query 只读 `skills/X-Radar-5核心.md`，改 Query 必须辉哥批准。
+不自动发布。影子模式未启动。
 
 权限：
 - 绿：信源/关键词/负面词/内容形式权重、候选数量
-- 黄：Radar Query、P0/P1 原则、主营方向（只建议）
+- 黄：Radar Query、P0/P1 原则、主营方向、热度权重、HOT 阈值（H≥80）、Jev 题表与阈值（只建议）
 - 红：发布、回复、DM、付费、merge、部署、删文件、改账户
 
 ## 2. 用户画像（User Profile）
