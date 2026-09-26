@@ -7,8 +7,10 @@ description: >-
 
 # XHS Deconstruct · v0.1
 
-只拆 `XHS-Evidence-Judge.md` 标成 **P0 或高 P1** 且 `advance: yes` 的条目。  
+只拆 `XHS-Evidence-Judge.md` 标成 **P0 或高 P1** 且 `advance: yes` 的条目。`advance` 只出现在打分前已打开、证据 ≥ L1 的笔记上；L0 不到这里。  
 每跑最多拆 **3** 条。其中需要播放视频的，最多 **1** 条（对齐采集预算里的「深拆从紧」，不是把抖音采集器改成小红书）。
+
+详情入口沿用信号卡上的 `/search_result/{id}?xsec_token=`。不要改去裸 `/explore/{id}`，也不要编造 token。打分前若已读到 L1，本步从该页接着做，不重复占「打分前 5 条」的名额。
 
 评论只在评论区真实打开后摘录，每条笔记最多 **8** 条可见评论。父评论对不上笔记就标 UNKNOWN，不要靠位置猜。
 

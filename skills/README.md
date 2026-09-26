@@ -22,7 +22,7 @@
 - 小红书种草与变现方法论.md（结构与变现；选题执行不替代下面的 XHS 流水线）
 - 小红书数据源清单.md（官方/半官方优先；保留，不并入流水线）
 - 小红书赛道数据源清单.md（较新补充，含聚光；与上一份并存）
-- XHS-Topic-Pipeline.md（小红书选题 v0.1 总流程：发现→规则→Jev→打分→拆解→最多 3 张卡；不发布、不建 routine）
+- XHS-Topic-Pipeline.md（小红书选题 v0.1：发现→规则→Jev→存活候选先开 ≤5 详情→再打分→拆解→最多 3 张卡；不发布、不建 routine）
 - XHS-Radar-Slots.md（66Workshop 默认 5 槽：刹车 / 低趴 / 验收 / AIGC 方法 / 实体经营；汽车题走小红书，不抄 X「汽车不进 Radar」）
 - XHS-Radar-Scout.md（只出信号卡，不打分）
 - XHS-Jev-Filter.md（规则之后的五题过滤；不算 X 热度 H；无 key 写 JEV_NOT_RUN）

@@ -9,7 +9,7 @@ description: >-
 
 只有同时满足的条目可以进卡：
 
-- Judge 为 P0 或高 P1
+- Judge 为 P0 或高 P1，且 `advance: yes`（打分发生在 ≤5 条详情升到 L1 之后；L0 不能 advance）
 - `XHS-Deconstruct.md` 证据等级 ≥ **L1**
 - 不是 NEWS_ONLY / PROMO 丢弃项
 

@@ -1,7 +1,7 @@
 ---
 name: XHS-Topic-Pipeline
 description: >-
-  小红书选题 v0.1 总流程：发现 → 规则过滤 → Jev 语义过滤 → 打分 → 拆解 → 最多 3 张选题卡。
+  小红书选题 v0.1：发现(L0) → 规则 → Jev → 存活候选先开 ≤5 详情到 L1 → 再打分 → 拆解 → 最多 3 张选题卡。
   可选 Notion 交接。不发布、不建 routine、不把抖音采集器当成小红书采集器。
 ---
 
@@ -18,10 +18,11 @@ description: >-
 | 0 | `XHS-Radar-Slots.md` | 5 个默认搜索槽 | 不扫描、不改 X Radar |
 | 1 | `XHS-Radar-Scout.md` | ≤20 信号卡，等级 L0 | 不打分、不拆解 |
 | 2 | 确定性规则 | 预算、去重、排除词、访问态、时间 | 不叫 Jev |
-| 3 | `XHS-Jev-Filter.md` | 五题过滤 | 不算 X 热度 H；不写传输回执 |
-| 4 | `XHS-Evidence-Judge.md` | P0 / 高P1 / P1 / WATCH / DISCARD | 不写正文 |
-| 5 | `XHS-Deconstruct.md` | 钩子与结构，按 L0–L3 | 无回执不声称看过视频 |
-| 6 | `XHS-Content-Converter.md` | ≤3 张可粘贴提纲 | 不发布 |
+| 3 | `XHS-Jev-Filter.md` | 五题过滤；硬丢的不打开 | 不算 X 热度 H；不写传输回执；通过 ≠ 可拆解 |
+| 4 | 详情预读（Scout 记下的链接） | Jev 存活候选最多开 **5** 条到 L1 | 不拆解、不播放；不编 `xsec_token`；裸 `/explore/{id}` 失败记 BLOCKED |
+| 5 | `XHS-Evidence-Judge.md` | 对已开详情打分；L0 不 advance | 不写正文；不得先打分再决定开详情 |
+| 6 | `XHS-Deconstruct.md` | 只拆 P0 / 高 P1 | 无回执不声称看过视频 |
+| 7 | `XHS-Content-Converter.md` | ≤3 张可粘贴提纲 | 不发布 |
 | 可选 | `Notion商业版日更交接.md` | 报告页 + 选题库候选 | 不代点发布；ID 不进 skill |
 
 ## 先读（不要抄成第二份清单）
@@ -48,7 +49,7 @@ X 管道（`Radar-Scout.md` → `Evidence-Judge.md` → `Content-Converter.md` �
 | 槽 | 5（当次可少用） |
 | 发现候选 | 20 |
 | 每槽笔记 | 4 |
-| Jev 之后打开详情 | 5 |
+| Jev 存活后、打分前打开详情 | 5（只为升到 L1；不是拆解配额） |
 | 拆解 | 3 |
 | 视频播放（L3） | 1 |
 | 单条可见评论 | 8 |
@@ -61,11 +62,12 @@ X 管道（`Radar-Scout.md` → `Evidence-Judge.md` → `Content-Converter.md` �
 ## Jev 放哪
 
 ```text
-搜索列表
+搜索列表（L0，保留 search_result?xsec_token=）
   → 确定性丢弃（预算/去重/排除词/登录墙/时间）
   → Jev 五题（或 JEV_NOT_RUN / HOST）
-  → 主模型打分
-  → 主模型拆解与写提纲
+  → 存活候选打开 ≤5 详情，升到 L1
+  → 主模型打分 / advance（L0 不得 P0，不得高 P1）
+  → 主模型只拆 P0 / 高 P1，再写提纲
 ```
 
 分类、过滤、路由在规则之后用 Jev。拆解、反证展开、提纲用主模型。  
@@ -103,7 +105,7 @@ X 管道（`Radar-Scout.md` → `Evidence-Judge.md` → `Content-Converter.md` �
 | 情况 | 写法 |
 |---|---|
 | 登录、验证码、风控 | `BLOCKED`，停止该源 |
-| 页面打不开、超时 | `FAILED`，不编摘录 |
+| 页面打不开、超时、裸 explore「页面不见了」 | `BLOCKED` 或 `FAILED`，不编摘录；改用带 token 的 search_result，没有 token 就停 |
 | 结果不确定、可能已看过 | `UNKNOWN`，先查当次笔记再决定开不开 |
 | 第三方数字无交叉 | 不得标 FACT |
 | 视频无播放回执 | 证据 ≤L2，禁止「已看完」 |
@@ -119,16 +121,17 @@ v0.1 不跑每周自优化，不改 `66-Intelligence-Ledger.md`（那是 X 账�
 1. 读本文件、槽、两份数据源清单、种草方法论。不登录、不建 routine。
 2. Scout：公开搜索为主，官方后台仅在人已经打开时只读。
 3. 用排除词和预算删卡。
-4. 有 `TYPESAFE_API_KEY` 才按 `XHS-Jev-Filter.md` 调 Jev；否则 `JEV_NOT_RUN`。
-5. Judge。只把 P0 / 高 P1 送去拆解。
-6. 拆解。视频默认不播。
-7. Converter，最多 3 张，封面标题 ≤20 字。
-8. 人要求再做 Notion 交接。
-9. 回报：候选数、丢弃原因、Jev 状态、卡片数、BLOCKED。不写「已发布」。
+4. 有 `TYPESAFE_API_KEY` 才按 `XHS-Jev-Filter.md` 调 Jev；否则 `JEV_NOT_RUN`。硬丢的不打开。
+5. 用信号卡里的 `search_result/{id}?xsec_token=` 给存活候选开详情，最多 5 条，升到 L1。没有 token 不编。裸 explore 打不开就记 BLOCKED。
+6. Judge。L0 不 advance。只把 P0 / 高 P1 送去拆解。
+7. 拆解。视频默认不播。沿用上一步的详情链接。
+8. Converter，最多 3 张，封面标题 ≤20 字。
+9. 人要求再做 Notion 交接。
+10. 回报：候选数、丢弃原因、Jev 状态、打开详情数、卡片数、BLOCKED。不写「已发布」。
 
 ## 验收
 
-- [ ] 六层文件都点名使用，没有跳过规则直接打分
+- [ ] 层表顺序被遵守：Jev 之后才开 ≤5 详情，然后才打分；没有跳过规则直接打分
 - [ ] 预算没有放宽
 - [ ] Jev 状态诚实
 - [ ] 选题卡 ≤3，且没有发布

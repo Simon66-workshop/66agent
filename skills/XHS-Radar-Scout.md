@@ -30,8 +30,22 @@ description: >-
 1. 读槽与排除词。排除词命中的结果不要进卡。
 2. 按源顺序搜索。每条只记录**实际看见**的字段。
 3. 去重：同一 URL / 笔记 ID；同一事件（同一案例、同一政策）留最早一条，其余写 `deduped_into`。
-4. 发现层停在检索结果或话题列表。**不要**在本 skill 里逐篇拆正文、不要播放视频。
-5. 输出信号卡。不打分，不写 P0/P1，不写选题卡。
+4. 发现层停在检索结果或话题列表。**不要**在本 skill 里打开详情、逐篇拆正文或播放视频。详情最多 5 条，发生在 Jev 存活之后、打分之前，见 `XHS-Topic-Pipeline.md`。
+5. 输出信号卡。不打分，不写 P0/P1，不写选题卡。记下可打开的详情链接（下一节），供那一步使用。
+
+## 详情链接（试跑 2026-09-25）
+
+公开搜索里，笔记有两种地址：
+
+- 能开到 L1 的：搜索结果上的 `/search_result/{id}?xsec_token=…`（token 以结果里实际出现的为准）
+- 易「页面不见了」、记 `BLOCKED` 的：裸 `/explore/{id}`
+
+规则：
+
+1. 信号卡的 `url` **优先**抄下搜索结果里的 `search_result/{id}?xsec_token=` 全链接。
+2. 若同时看见裸 `/explore/{id}`，写入 `explore_url`，不拿它当详情入口。
+3. 结果里没有 `xsec_token`：`url` 写实际看见的地址，`xsec_token` 写「未找到」。**禁止编造 token**，禁止凭笔记 ID 拼一条假的 search_result 链接。
+4. token 只留在当次运行的信号卡里。不要写回本 skill、仓库或 PR。
 
 相对时间核不出绝对日期：时间写原始显示 + UNKNOWN。
 
@@ -40,7 +54,9 @@ description: >-
 ```text
 slot:
 source: 公开搜索 | 话题 | 账号页 | 创作者中心 | 灵犀 | 蒲公英 | 聚光 | 第三方
-url:
+url: 优先 /search_result/{id}?xsec_token=…；没有则写实际看见的地址
+explore_url: 裸 /explore/{id}；没看见就「未找到」。不作为详情入口
+xsec_token: 只抄搜索结果原文；没有写「未找到」。禁止编造
 note_id: 看不见就写 UNKNOWN
 author_display: 只写屏上昵称；没有就「未找到」
 title_observed:
@@ -62,7 +78,7 @@ deduped_into: 无则空
 - 评分、内容卡、拆解、发布、评论、私信
 - 因点赞高收录；点赞没看见就「未找到」，不编
 - 把第三方榜单数字写成已交叉验证
-- 写入 cookie、token、账号密码、对标号 ID
+- 把 cookie、账号密码、对标号 ID 写入 skill 或仓库；编造 `xsec_token`
 - 启动 routine、影子模式、自动抓取脚本
 
 ## 验收
@@ -72,3 +88,4 @@ deduped_into: 无则空
 - [ ] 没有分数、没有选题卡
 - [ ] 指标要么有看见位置，要么「未找到」
 - [ ] 登录墙写成 BLOCKED，没有绕过步骤
+- [ ] 有搜索结果链接时，`url` 是带 `xsec_token` 的 search_result，不是裸 explore；没有 token 则写「未找到」
