@@ -26,7 +26,7 @@ description: >-
 - 预算：见 `XHS-Topic-Pipeline.md`，超了直接停
 - 去重：同一笔记 URL / 笔记 ID；同一事件留最早来源
 - 排除词：`XHS-Radar-Slots.md` 默认排除
-- 访问态：登录墙、验证码、限流 → 该条 `BLOCKED`，不绕过
+- 访问态：登录墙、验证码、限流、Requests too frequent / Security Verification → 该词 `BLOCKED`，不绕过。频控 BLOCKED 不打开详情、不问 Jev（步骤见 `XHS-Topic-Pipeline.md`「频控」）
 - 相对时间（「3天前」）在核不出绝对日期前，时间字段标 UNKNOWN，**不算**已核窗内
 - 页面是否打开、URL 是否重复、数字是看见的还是缺失：只看工具结果，**不问 Jev**
 

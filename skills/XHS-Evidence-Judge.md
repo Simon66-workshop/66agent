@@ -18,7 +18,7 @@ POV（我们怎么看）不在本 skill 写，留给 `XHS-Content-Converter.md`�
 与 `XHS-Topic-Pipeline.md` 一致，打分不能提前：
 
 1. Scout 只出 L0 信号卡。
-2. 确定性规则丢弃超预算、重复、排除词、BLOCKED。
+2. 确定性规则丢弃超预算、重复、排除词、BLOCKED。频控 BLOCKED（Requests too frequent / Security Verification / 验证码墙，见流水线「频控」）不打开详情、不问 Jev、不打分。
 3. `XHS-Jev-Filter.md` 问完。硬门禁（含 X1_LOW）不打开、不打分。
 4. **对 Jev 存活候选**，用信号卡上的 `search_result/{id}?xsec_token=` 打开详情，最多 **5** 条，证据升到 L1。裸 `/explore/{id}` 打开失败记 BLOCKED，不编 token。这一步只读标题、封面、可见正文，不拆解、不播放。
 5. **然后**才打分并写 `advance`。没被选进这 5 条的存活候选保持 L0。
